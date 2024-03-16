@@ -1,5 +1,4 @@
 import './App.css'
-import { useState } from 'react'
 
 import { PrimaryButton } from './components/buttons/PrimaryButton'
 import { PrimaryInput } from './components/inputs/PrimaryInput'
