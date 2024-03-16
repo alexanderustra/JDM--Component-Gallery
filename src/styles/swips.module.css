@@ -1,0 +1,24 @@
+.container {
+    border-radius: 15px;
+    width: 66px;
+    height: 27px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #336CFF;
+    box-sizing: border-box;
+}
+.swip {
+    position: relative;
+    margin: 5px;
+    top: -4px;
+    left: -3px;
+    border-radius: 13px;
+    width: 31px;
+    height: 21px;
+    transition: .2s;
+    background-color: #5a87f9;
+}
+.swip_on {
+    left: 24px;
+    background-color: #336CFF;
+}
