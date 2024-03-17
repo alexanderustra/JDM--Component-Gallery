@@ -2,12 +2,13 @@ import styles from "../../styles/Buttons.module.css"
 
 interface ButtonProps {
     text:string
-    type: "primary-button" | "success" | "danger" | "disabled"
+    type?: "success" | "danger" | "disabled"
+    action?: () => void;
 }
 
-export function PrimaryButton ({text,type}:ButtonProps) {
+export function PrimaryButton ({text,type,action}:ButtonProps) {
  return (
-    <button className={`${styles[type]}`}>
+    <button onClick = {action} className={type? styles[type] : styles.primaryButton}>
         {text}
     </button>
  )   
