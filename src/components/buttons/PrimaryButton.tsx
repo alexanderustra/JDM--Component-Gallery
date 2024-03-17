@@ -2,7 +2,7 @@ import styles from "../../styles/Buttons.module.css"
 
 interface ButtonProps {
     text:string
-    type:string;
+    type: "primary-button" | "success" | "danger" | "disabled"
 }
 
 export function PrimaryButton ({text,type}:ButtonProps) {

@@ -11,6 +11,7 @@ import { PrimaryActionCard } from './components/cards/PrimaryActionCard'
 import SimpleAccordion from './components/accordeons/PrimaryAccordion'
 import AccordionWithSubtitles from './components/accordeons/AccordionWithSubtitles'
 import CircularProgress from './components/circularProgress/PrimaryCircularProgress'
+import PrimaryTooltip from './components/toolTip/PrimaryTooltip'
 
 const items = [
   {
@@ -55,6 +56,10 @@ function App() {
       <PrimaryActionCard title = 'Cyberpunk Cat' subtitle = 'Subtitle' imageUrl='https://i.pinimg.com/564x/d5/45/97/d54597febda44e5d047fa5284462f15f.jpg' />
       <PrimaryCard />
       <CircularProgress />
+      <PrimaryTooltip button='Hover Me' tipText=' Oh Hello There' position='bottom' />
+      <PrimaryTooltip button='Hover Me' tipText=' Oh Hello There' position='top' backgroundColor='#00A962' />
+      <PrimaryTooltip button='Hover Me' tipText=' Oh Hello There' position='left' backgroundColor='#FF4040' />
+      <PrimaryTooltip button='Hover Me' tipText=' Oh Hello There' position='right' backgroundColor='#336CFF' />
     </>
   )
 }

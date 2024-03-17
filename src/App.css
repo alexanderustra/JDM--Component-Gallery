@@ -1,8 +1,8 @@
 * {
-    margin: 10px;
+    margin: 12px;
 }
 #root {
-    width: 1100px;
+    width: 1000px;
     flex-wrap: wrap;
     display: flex;
 }
