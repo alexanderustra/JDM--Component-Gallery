@@ -5,7 +5,7 @@ interface ChipsProps {
     text: string
     type?:  "shadow" | "bordered"
 }
-export function PrimaryChip ({type,color,text}:ChipsProps) {
+export function Chip ({type,color,text}:ChipsProps) {
     const boxShadow = `0px 2px 6px 1px ${color}`;
     const chipStyle = {
         border: type === "bordered" ? `2px solid ${color}` : 'none',

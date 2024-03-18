@@ -2,18 +2,18 @@ import './App.css'
 import { items } from './textSamples'
 import { lorem } from './textSamples'
 
-import { PrimaryButton } from './components/buttons/PrimaryButton'
-import { PrimaryInput } from './components/inputs/PrimaryInput'
-import { PrimaryChip } from './components/chips/PrimaryChip'
-import { PrimarySwip } from './components/swips/PrimarySwip'
+import { Button } from './components/buttons/Button'
+import { Input } from './components/inputs/Input'
+import { Chip } from './components/chips/Chip'
+import { Swip } from './components/swips/Swip'
 import { PrimaryCard } from './components/cards/PrimaryCard'
 import { BackgroundImgCard } from './components/cards/BackgroundImgCard'
 import { CropImgCard } from './components/cards/CropImgCard'
 import { PrimaryActionCard } from './components/cards/PrimaryActionCard'
 import SimpleAccordion from './components/accordeons/PrimaryAccordion'
 import AccordionWithSubtitles from './components/accordeons/AccordionWithSubtitles'
-import CircularProgress from './components/circularProgress/PrimaryCircularProgress'
-import PrimaryTooltip from './components/toolTip/PrimaryTooltip'
+import CircularProgress from './components/circularProgress/CircularProgress'
+import Tooltip from './components/toolTip/Tooltip'
 
 const pressAction = ()=> {
   alert("yep, you pressed me")
@@ -28,15 +28,15 @@ function App() {
 
   return (
     <>
-      <PrimaryButton text='Default' action={pressAction} />
-      <PrimaryButton text='Success' type='success' action={successAction} />
-      <PrimaryButton text='Danger' type='danger' action={dangerAction} />
-      <PrimaryButton text='Disabled' type='disabled' />
-      <PrimaryInput />
-      <PrimaryChip text='Default Chip' />
-      <PrimaryChip text='Bordered' type='bordered' color='#00A962' />
-      <PrimaryChip text='With Shadow' type='shadow' color='#FF4040' />
-      <PrimarySwip />
+      <Button text='Default' action={pressAction} />
+      <Button text='Success' type='success' action={successAction} />
+      <Button text='Danger' type='danger' action={dangerAction} />
+      <Button text='Disabled' type='disabled' />
+      <Input />
+      <Chip text='Default Chip' />
+      <Chip text='Bordered' type='bordered' color='#00A962' />
+      <Chip text='With Shadow' type='shadow' color='#FF4040' />
+      <Swip />
       <CircularProgress label='Loading' />
       <SimpleAccordion items = {items} />
       <AccordionWithSubtitles items = {items} />
@@ -44,10 +44,10 @@ function App() {
       <CropImgCard title = 'Cyberpunk Cat' subtitle = 'Subtitle' imageUrl='https://i.pinimg.com/564x/d5/45/97/d54597febda44e5d047fa5284462f15f.jpg' />
       <PrimaryActionCard title = 'Cyberpunk Cat' subtitle = 'Subtitle' imageUrl='https://i.pinimg.com/564x/d5/45/97/d54597febda44e5d047fa5284462f15f.jpg' />
       <PrimaryCard title='Primary Card' subtitle={lorem} />
-      <PrimaryTooltip button='Hover Me' tipText=' Oh Hello There' position='bottom' />
-      <PrimaryTooltip button='Hover Me' tipText=' Oh Hello There' position='top' backgroundColor='#00A962' />
-      <PrimaryTooltip button='Hover Me' tipText=' Oh Hello There' position='left' backgroundColor='#FF4040' />
-      <PrimaryTooltip button='Hover Me' tipText=' Oh Hello There' position='right' backgroundColor='#336CFF' />
+      <Tooltip button='Hover Me' tipText=' Oh Hello There' position='bottom' />
+      <Tooltip button='Hover Me' tipText=' Oh Hello There' position='top' backgroundColor='#00A962' />
+      <Tooltip button='Hover Me' tipText=' Oh Hello There' position='left' backgroundColor='#FF4040' />
+      <Tooltip button='Hover Me' tipText=' Oh Hello There' position='right' backgroundColor='#336CFF' />
     </>
   )
 }

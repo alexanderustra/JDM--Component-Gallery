@@ -8,7 +8,7 @@ interface ToolTipProps {
     backgroundColor?: string 
 }
 
-const PrimaryTooltip: React.FC<ToolTipProps> = ({ button, tipText, position , backgroundColor }) => {
+const Tooltip: React.FC<ToolTipProps> = ({ button, tipText, position , backgroundColor }) => {
     const tooltipStyle = {
         backgroundColor: backgroundColor || '#23313F'
     };
@@ -20,4 +20,4 @@ const PrimaryTooltip: React.FC<ToolTipProps> = ({ button, tipText, position , ba
     );
 };
 
-export default PrimaryTooltip;
+export default Tooltip;

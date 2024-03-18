@@ -6,7 +6,7 @@ interface ButtonProps {
     action?: () => void;
 }
 
-export function PrimaryButton ({text,type,action}:ButtonProps) {
+export function Button ({text,type,action}:ButtonProps) {
  return (
     <button onClick = {action} className={type? styles[type] : styles.primaryButton}>
         {text}

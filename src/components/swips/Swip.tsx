@@ -1,7 +1,7 @@
 import styles from '../../styles/swips.module.css';
 import { useState } from 'react';
 
-export function PrimarySwip() {
+export function Swip() {
     const [isActive,setIsActive] = useState(false);
 
     const handleClick = ()=> {
