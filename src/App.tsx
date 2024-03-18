@@ -15,34 +15,34 @@ import AccordionWithSubtitles from './components/accordeons/AccordionWithSubtitl
 import CircularProgress from './components/circularProgress/PrimaryCircularProgress'
 import PrimaryTooltip from './components/toolTip/PrimaryTooltip'
 
-const press = ()=> {
+const pressAction = ()=> {
   alert("yep, you pressed me")
 }
-const success = ()=> {
+const successAction = ()=> {
   alert("Everything fine")
 }
-const danger = ()=> {
+const dangerAction = ()=> {
   alert("Not so Fine")
 }
 function App() {
 
   return (
     <>
-      <PrimaryButton text='Default' action={press} />
-      <PrimaryButton text='Success' type='success' action={success} />
-      <PrimaryButton text='Danger' type='danger' action={danger} />
+      <PrimaryButton text='Default' action={pressAction} />
+      <PrimaryButton text='Success' type='success' action={successAction} />
+      <PrimaryButton text='Danger' type='danger' action={dangerAction} />
       <PrimaryButton text='Disabled' type='disabled' />
       <PrimaryInput />
       <PrimaryChip text='Default Chip' type='bordered' color='#00A962' />
       <PrimaryChip text='Default Chip' type='shadow' color='#FF4040' />
       <PrimarySwip />
+      <CircularProgress />
       <SimpleAccordion items = {items} />
       <AccordionWithSubtitles items = {items} />
       <BackgroundImgCard title = 'Cyberpunk Cat' subtitle = 'Subtitle' imageUrl="https://i.pinimg.com/564x/d5/45/97/d54597febda44e5d047fa5284462f15f.jpg" />
       <CropImgCard title = 'Cyberpunk Cat' subtitle = 'Subtitle' imageUrl='https://i.pinimg.com/564x/d5/45/97/d54597febda44e5d047fa5284462f15f.jpg' />
       <PrimaryActionCard title = 'Cyberpunk Cat' subtitle = 'Subtitle' imageUrl='https://i.pinimg.com/564x/d5/45/97/d54597febda44e5d047fa5284462f15f.jpg' />
       <PrimaryCard title='Primary Card' subtitle={lorem} />
-      <CircularProgress />
       <PrimaryTooltip button='Hover Me' tipText=' Oh Hello There' position='bottom' />
       <PrimaryTooltip button='Hover Me' tipText=' Oh Hello There' position='top' backgroundColor='#00A962' />
       <PrimaryTooltip button='Hover Me' tipText=' Oh Hello There' position='left' backgroundColor='#FF4040' />

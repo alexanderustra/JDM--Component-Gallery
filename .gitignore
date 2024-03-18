@@ -1,5 +1,4 @@
 # Logs
-logs
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +6,35 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Ignorar archivos generados por la compilación/transpilación
+dist/
+build/
+
+# Ignorar archivos de dependencias o módulos
+node_modules/
+
+# Ignorar archivos específicos de configuración local
+.env
+
+# Ignorar archivos de configuración específicos del proyecto
+vite.config.ts
+tsconfig.json
+tsconfig.node.json
+.eslintrc.cjs
+
+# Ignorar archivos de bloqueo de versiones
+package-lock.json
+yarn.lock
+
+# Ignorar archivos de despliegue
+deploy/
