@@ -33,10 +33,11 @@ function App() {
       <PrimaryButton text='Danger' type='danger' action={dangerAction} />
       <PrimaryButton text='Disabled' type='disabled' />
       <PrimaryInput />
-      <PrimaryChip text='Default Chip' type='bordered' color='#00A962' />
-      <PrimaryChip text='Default Chip' type='shadow' color='#FF4040' />
+      <PrimaryChip text='Default Chip' />
+      <PrimaryChip text='Bordered' type='bordered' color='#00A962' />
+      <PrimaryChip text='With Shadow' type='shadow' color='#FF4040' />
       <PrimarySwip />
-      <CircularProgress />
+      <CircularProgress label='Loading' />
       <SimpleAccordion items = {items} />
       <AccordionWithSubtitles items = {items} />
       <BackgroundImgCard title = 'Cyberpunk Cat' subtitle = 'Subtitle' imageUrl="https://i.pinimg.com/564x/d5/45/97/d54597febda44e5d047fa5284462f15f.jpg" />
