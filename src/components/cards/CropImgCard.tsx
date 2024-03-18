@@ -1,8 +1,10 @@
 import styles from '../../styles/cards.module.css'
 import React from 'react';
-import { ImgCardProps } from '../../Props.d';
-//---
-
+interface ImgCardProps {
+    imageUrl: string
+    title:string
+    subtitle:string
+}
 export const CropImgCard: React.FC<ImgCardProps> = ({ imageUrl,title,subtitle }) => {
     return (
         <div className={styles.cropImgContainer} >

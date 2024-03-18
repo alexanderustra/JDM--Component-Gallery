@@ -1,6 +1,10 @@
 import styles from '../../styles/cards.module.css'
 import React from 'react';
-import { ImgCardProps } from '../../Props.d';
+export interface ImgCardProps {
+    imageUrl: string
+    title:string
+    subtitle:string
+}
 
 export const BackgroundImgCard: React.FC<ImgCardProps> = ({ imageUrl,title,subtitle }) => {
     return (

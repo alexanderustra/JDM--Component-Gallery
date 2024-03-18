@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.primaryChip {
+.primaryChip , .bordered ,.shadow{
     width: 98px;
     height: 25px;
     font-size: 12px;
     border-radius: 15px;
     text-align: center;
-    padding-top: 5px;
+    padding: 5px;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
     background-color: #336CFF;
     color: #FFFFFF;
+}
+.bordered {
+    padding: 4px;
+    font-weight: 500;
+    color:#464646 ;
+    background-color: #FFFFFF;
 }

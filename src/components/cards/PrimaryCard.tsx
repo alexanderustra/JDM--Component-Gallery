@@ -1,10 +1,14 @@
 import styles from '../../styles/cards.module.css'
+interface ImgCardProps {
+    title:string
+    subtitle:string
+}
 
-export function PrimaryCard () {
+export function PrimaryCard ({title,subtitle}:ImgCardProps) {
     return (
         <div className={styles.primaryCard}>
-            <h3>Design System</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi suscipit exercitationem natus animi iste in.</p>
+            <h3>{title}</h3>
+            <p>{subtitle}</p>
         </div>
     )
 }

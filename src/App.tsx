@@ -1,4 +1,6 @@
 import './App.css'
+import { items } from './textSamples'
+import { lorem } from './textSamples'
 
 import { PrimaryButton } from './components/buttons/PrimaryButton'
 import { PrimaryInput } from './components/inputs/PrimaryInput'
@@ -13,20 +15,6 @@ import AccordionWithSubtitles from './components/accordeons/AccordionWithSubtitl
 import CircularProgress from './components/circularProgress/PrimaryCircularProgress'
 import PrimaryTooltip from './components/toolTip/PrimaryTooltip'
 
-const items = [
-  {
-    title: 'Título del elemento 1',
-    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laborum numquam accusamus autem sequi quibusdam minima laudantium repellendus consequuntur cupiditate? Ullam autem non fuga enim dolorum adipisci maiores similique possimus?'
-  },
-  {
-    title: 'Título del elemento 2',
-    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laborum numquam accusamus autem sequi quibusdam minima laudantium repellendus consequuntur cupiditate? Ullam autem non fuga enim dolorum adipisci maiores similique possimus?'
-  },
-  {
-    title: 'Título del elemento 3',
-    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laborum numquam accusamus autem sequi quibusdam minima laudantium repellendus consequuntur cupiditate? Ullam autem non fuga enim dolorum adipisci maiores similique possimus?'
-  }
-];
 const press = ()=> {
   alert("yep, you pressed me")
 }
@@ -45,14 +33,15 @@ function App() {
       <PrimaryButton text='Danger' type='danger' action={danger} />
       <PrimaryButton text='Disabled' type='disabled' />
       <PrimaryInput />
-      <PrimaryChip />
+      <PrimaryChip text='Default Chip' type='bordered' color='#00A962' />
+      <PrimaryChip text='Default Chip' type='shadow' color='#FF4040' />
       <PrimarySwip />
       <SimpleAccordion items = {items} />
       <AccordionWithSubtitles items = {items} />
       <BackgroundImgCard title = 'Cyberpunk Cat' subtitle = 'Subtitle' imageUrl="https://i.pinimg.com/564x/d5/45/97/d54597febda44e5d047fa5284462f15f.jpg" />
       <CropImgCard title = 'Cyberpunk Cat' subtitle = 'Subtitle' imageUrl='https://i.pinimg.com/564x/d5/45/97/d54597febda44e5d047fa5284462f15f.jpg' />
       <PrimaryActionCard title = 'Cyberpunk Cat' subtitle = 'Subtitle' imageUrl='https://i.pinimg.com/564x/d5/45/97/d54597febda44e5d047fa5284462f15f.jpg' />
-      <PrimaryCard />
+      <PrimaryCard title='Primary Card' subtitle={lorem} />
       <CircularProgress />
       <PrimaryTooltip button='Hover Me' tipText=' Oh Hello There' position='bottom' />
       <PrimaryTooltip button='Hover Me' tipText=' Oh Hello There' position='top' backgroundColor='#00A962' />

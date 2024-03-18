@@ -8,7 +8,7 @@
 }
 .primaryCard {
     width: 335px;
-    height: 140px;
+    height: auto;
     text-align: center;
     box-sizing: border-box;
     padding: 10px;
