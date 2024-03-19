@@ -1,7 +1,12 @@
 import styles from "../../styles/Inputs.module.css"
 
-export function Input () {
+interface inputPops {
+    placeholder?: string
+    type?: "text" | "email" | "number"
+    name: string
+}
+export function Input ({placeholder,type,name}:inputPops) {
     return(
-        <input type="text" className={styles.primaryInput} placeholder="Design System"/>
+        <input type={type? type : "text"} name={name} className={styles.primaryInput} placeholder={placeholder ? placeholder : ""}/>
     )
 }

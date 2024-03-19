@@ -22,6 +22,7 @@
     transition: .2s;
 }
 .primaryCard:hover {
+    background-color: #07294c;
     transform: scale(1.02);
 }
 .primaryCard > p {
@@ -80,9 +81,12 @@
     color: #FFFFFF;
     background-color:  #23313F;
 }
+.cropImgContainer:hover {
+    background-color: #07294c;
+}
 .cropImgContainer > img {
     width: 213px;
-    height: 160px;
+    height: 150px;
     margin: auto;
     margin-left: 15px;
     border-radius: 10px;
@@ -106,6 +110,7 @@
     font-size: 13px;
 }
 .cropImgContainer:hover img {
+    height: 140px;
     transform: scale(1.06);
 }
 /*Primary action Card*/
@@ -137,4 +142,5 @@
 }
 .primaryActionContainer:hover {
     transform: scale(1.02);
+    background-color: #07294c;
 }

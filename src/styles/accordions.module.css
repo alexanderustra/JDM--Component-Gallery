@@ -8,7 +8,6 @@
     font-weight: 300;
     font-style: normal;
 }
-  
   .uiAccordionTitle {
     border-radius: 10px;
     font-family: "Roboto Mono", monospace;
@@ -19,6 +18,10 @@
     padding: 10px;
     color: #FFFFFF;
     background-color:#23313F;
+    transition: .1s;
+  }
+  .uiAccordionTitle:hover {
+    background-color: #07294C;
   }
   
   .uiAccordionContent {

@@ -11,6 +11,7 @@
   
   .circularProgress {
     position: absolute;
+    text-align: center;
     width: 100%;
     height: 100%;
     border: 7px solid transparent; 
@@ -22,7 +23,7 @@
   .label {
     position: relative;
     top: 60px;
-    left: -5px;
+    margin: auto;
     font-family: "Roboto", sans-serif;
     letter-spacing: .5px;
     font-weight: 400;

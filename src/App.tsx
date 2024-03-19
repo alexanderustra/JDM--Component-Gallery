@@ -32,12 +32,12 @@ function App() {
       <Button text='Success' type='success' action={successAction} />
       <Button text='Danger' type='danger' action={dangerAction} />
       <Button text='Disabled' type='disabled' />
-      <Input />
+      <Input name='name' placeholder='Design System'/>
       <Chip text='Default Chip' />
       <Chip text='Bordered' type='bordered' color='#00A962' />
       <Chip text='With Shadow' type='shadow' color='#FF4040' />
       <Swip />
-      <CircularProgress label='Loading' />
+      <CircularProgress label='Loading...' />
       <SimpleAccordion items = {items} />
       <AccordionWithSubtitles items = {items} />
       <BackgroundImgCard title = 'Cyberpunk Cat' subtitle = 'Subtitle' imageUrl="https://i.pinimg.com/564x/d5/45/97/d54597febda44e5d047fa5284462f15f.jpg" />
