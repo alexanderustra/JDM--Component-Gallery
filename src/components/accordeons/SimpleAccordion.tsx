@@ -1,6 +1,6 @@
 import {useState } from "react";
 import React from "react";
-import styles from '../../styles/accordions.module.css'
+import styles from './accordions.module.css'
 
 interface AccordionItem {
   title: string;
@@ -34,7 +34,7 @@ const SimpleAccordion: React.FC<AccordionProps> = ({ items }: AccordionProps) =>
     );
   });
 
-  return <div className={styles.uiAccordion}>{renderedItems}</div>;
+  return <div className={styles.simpleAccordionContainer}>{renderedItems}</div>;
 };
 
 export default SimpleAccordion;

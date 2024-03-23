@@ -2,7 +2,32 @@
     margin: 12px;
 }
 #root {
-    width: 1300px;
+    width: 1200px;
     flex-wrap: wrap;
     display: flex;
+}
+#WIP-container {
+    width: auto;
+    text-align: center;
+}
+h1,h2 {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -2px;
+    font-size: 50px;
+    background: linear-gradient(to bottom right, #07294C, #000A13);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h2 {
+    letter-spacing: 0px;
+    font-size: 30px;
+}
+h1:hover , h2:hover {
+    background: linear-gradient(to bottom right, #0681FB, #FF0099);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

@@ -1,4 +1,4 @@
-import styles from "../../styles/chips.module.css"
+import styles from "./chips.module.css"
 
 interface ChipsProps {
     color?: string

@@ -1,0 +1,27 @@
+.listContainer {
+    width: 200px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: none;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: .5px;
+    font-weight: 400;
+    font-style: normal;
+    background-image: linear-gradient(to bottom right, #23313F, #000A13);
+}
+
+.listContainer p {
+    height: 40px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+    transition: background-image 0.5s; /* Agregar una transición */
+}
+
+.listContainer p:hover {
+    backdrop-filter: blur(5px);
+    background-image: linear-gradient(to bottom right, #3B497C, #FF00B8);
+}

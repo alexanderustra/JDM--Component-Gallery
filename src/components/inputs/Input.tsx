@@ -1,12 +1,19 @@
-import styles from "../../styles/Inputs.module.css"
-
+import styles from "./Inputs.module.css"
 interface inputPops {
+    label?: string
     placeholder?: string
     type?: "text" | "email" | "number"
     name: string
 }
-export function Input ({placeholder,type,name}:inputPops) {
+export function Input ({label,placeholder,type,name}:inputPops) {
+    let content = null;
+  if (label) {
+      content = <label htmlFor={name} className={styles.label}>{label}</label>;
+  }
     return(
-        <input type={type? type : "text"} name={name} className={styles.primaryInput} placeholder={placeholder ? placeholder : ""}/>
+        <div className={styles.inputContainer}>
+            {content}
+            <input id={name} type={type? type : "text"} name={name} className={styles.primaryInput} placeholder={placeholder ? placeholder : ""}/>
+        </div>
     )
 }

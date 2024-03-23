@@ -1,4 +1,4 @@
-import styles from '../../styles/cards.module.css'
+import styles from './cards.module.css'
 interface ImgCardProps {
     title:string
     subtitle:string

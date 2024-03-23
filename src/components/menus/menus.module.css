@@ -1,0 +1,117 @@
+.openedMenu ,.closedMenu {
+  text-align: right;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 15px;
+  display: block;
+  position: fixed;
+  min-width: 150px;
+  width: auto;
+  height: auto;
+  top: 15%;
+  right: 30px;
+  z-index: 1;
+  background-color: #336CFF;
+  animation: slideIn .4s cubic-bezier(.62,1.21,1,.93);
+  -webkit-box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.66);
+  -moz-box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.66);
+  box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.66);
+}
+.openedMenu > *, .closedMenu > * {
+  margin: auto;
+  display: block;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: .5px;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+  transition: .1s;
+}
+.openedMenu > *:hover {
+  transform: scale(1.1);
+}
+
+.closedMenu {
+  right: 0%;
+  animation: slideOut .3s forwards;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(150%);
+  }
+  50% {
+    transform: translateX(0)
+  }
+  70% {
+    transform: translateX(20%)
+  }
+  100% {
+    transform: translateX(0)
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    display: none;
+    transform: translateX(120%);
+  }
+}
+/*BUTTON ICON*/
+.navIcon{
+    border-radius: 10px;
+    width: 65px;
+    height: 50px;
+    border: none;
+    background-color: #336CFF;
+    margin: 10px 10px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.66);
+    -moz-box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.66);
+    box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.66);
+  }
+  .navIcon span{
+    background-color:#FFFFFF;
+    position: absolute;
+    border-radius: 2px;
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+    width:80%;
+    height: 4px;
+  }
+  .navIcon span:nth-child(1){
+    top:0px;
+    left: -5px;
+  }
+  .navIcon span:nth-child(2){
+    top:12px;
+    left: -5px;
+  }
+  .navIcon span:nth-child(3){
+    bottom:-2px;
+    left: -5px;
+  }
+  .navIcon:not(.open):hover span:nth-child(1){
+    transform: scaleX(.8);
+  }
+  .navIcon:not(.open):hover span:nth-child(2){
+    transform: scaleX(.5);
+  }
+  .navIcon:not(.open):hover span:nth-child(3){
+    transform: scaleX(.8);
+  }
+  .navIcon.open span:nth-child(1){
+    top: 13px;
+  }
+  .navIcon.open span:nth-child(2){
+    top:13px;
+  }
+  .navIcon.open span:nth-child(3){
+    top: 13px;
+  }
+  

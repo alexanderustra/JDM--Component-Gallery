@@ -1,4 +1,4 @@
-import styles from '../../styles/swips.module.css';
+import styles from './swips.module.css';
 import { useState } from 'react';
 
 export function Swip() {

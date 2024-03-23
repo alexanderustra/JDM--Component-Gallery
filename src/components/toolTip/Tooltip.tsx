@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/tooltips.module.css';
+import styles from './tooltips.module.css';
 
 interface ToolTipProps {
     button: React.ReactNode;

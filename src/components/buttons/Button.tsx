@@ -1,4 +1,4 @@
-import styles from "../../styles/Buttons.module.css"
+import styles from "./Buttons.module.css"
 
 interface ButtonProps {
     text:string

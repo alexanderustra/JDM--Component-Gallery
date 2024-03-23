@@ -18,11 +18,11 @@
     font-weight: 100;
     font-style: normal;
     color: #FFFFFF;
-    background-color: #23313F;
+    background-image: linear-gradient(to bottom right, #23313F, #000A13);
     transition: .2s;
 }
 .primaryCard:hover {
-    background-color: #07294c;
+    background-image: linear-gradient(to bottom right, #07294C, #000A13);
     transform: scale(1.02);
 }
 .primaryCard > p {
@@ -43,7 +43,6 @@
     font-weight: 100;
     font-style: normal;
     color: #FFFFFF;
-    background-color: #23313F;
     background-size:cover;
     transition: .2s;
 }
@@ -79,10 +78,10 @@
     font-weight: 100;
     font-style: normal;
     color: #FFFFFF;
-    background-color:  #23313F;
+    background-image: linear-gradient(to bottom right, #23313F, #000A13);
 }
 .cropImgContainer:hover {
-    background-color: #07294c;
+    background-image: linear-gradient(to bottom right, #07294C, #000A13);
 }
 .cropImgContainer > img {
     width: 213px;
@@ -142,5 +141,5 @@
 }
 .primaryActionContainer:hover {
     transform: scale(1.02);
-    background-color: #07294c;
+    background-image: linear-gradient(to bottom right, #07294C, #000A13);
 }

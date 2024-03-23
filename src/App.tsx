@@ -10,10 +10,10 @@ import { PrimaryCard } from './components/cards/PrimaryCard'
 import { BackgroundImgCard } from './components/cards/BackgroundImgCard'
 import { CropImgCard } from './components/cards/CropImgCard'
 import { PrimaryActionCard } from './components/cards/PrimaryActionCard'
-import SimpleAccordion from './components/accordeons/PrimaryAccordion'
-import AccordionWithSubtitles from './components/accordeons/AccordionWithSubtitles'
-import CircularProgress from './components/circularProgress/CircularProgress'
+import SimpleAccordion from './components/accordeons/SimpleAccordion'
 import Tooltip from './components/toolTip/Tooltip'
+import { HamburguerMenu } from './components/menus/HamburgerMenu'
+import { ListBox } from './components/listBox/ListBox'
 
 const pressAction = ()=> {
   alert("yep, you pressed me")
@@ -24,6 +24,7 @@ const successAction = ()=> {
 const dangerAction = ()=> {
   alert("Not so Fine")
 }
+
 function App() {
 
   return (
@@ -32,22 +33,30 @@ function App() {
       <Button text='Success' type='success' action={successAction} />
       <Button text='Danger' type='danger' action={dangerAction} />
       <Button text='Disabled' type='disabled' />
-      <Input name='name' placeholder='Design System'/>
+      <Input label='Label' name='name' placeholder='Design System'/>
       <Chip text='Default Chip' />
       <Chip text='Bordered' type='bordered' color='#00A962' />
       <Chip text='With Shadow' type='shadow' color='#FF4040' />
       <Swip />
-      <CircularProgress label='Loading...' />
       <SimpleAccordion items = {items} />
-      <AccordionWithSubtitles items = {items} />
       <BackgroundImgCard title = 'Cyberpunk Cat' subtitle = 'Subtitle' imageUrl="https://i.pinimg.com/564x/d5/45/97/d54597febda44e5d047fa5284462f15f.jpg" />
       <CropImgCard title = 'Cyberpunk Cat' subtitle = 'Subtitle' imageUrl='https://i.pinimg.com/564x/d5/45/97/d54597febda44e5d047fa5284462f15f.jpg' />
-      <PrimaryActionCard title = 'Cyberpunk Cat' subtitle = 'Subtitle' imageUrl='https://i.pinimg.com/564x/d5/45/97/d54597febda44e5d047fa5284462f15f.jpg' />
+      <PrimaryActionCard primaryColor='#804DD3' secondaryColor='#0080FF' title = 'Cyberpunk Cat' subtitle = 'Subtitle' imageUrl='https://i.pinimg.com/564x/d5/45/97/d54597febda44e5d047fa5284462f15f.jpg' />
       <PrimaryCard title='Primary Card' subtitle={lorem} />
       <Tooltip button='Hover Me' tipText=' Oh Hello There' position='bottom' />
       <Tooltip button='Hover Me' tipText=' Oh Hello There' position='top' backgroundColor='#00A962' />
       <Tooltip button='Hover Me' tipText=' Oh Hello There' position='left' backgroundColor='#FF4040' />
       <Tooltip button='Hover Me' tipText=' Oh Hello There' position='right' backgroundColor='#336CFF' />
+      <HamburguerMenu>
+        <h2>Object 1</h2>
+        <h2>Object 2</h2>
+        <h2>Object 4</h2>
+      </HamburguerMenu>
+      <ListBox />
+      <div id='WIP-container'>
+        <h1>JDM-Components</h1>
+        <h2>Work In Progress</h2>
+      </div>
     </>
   )
 }
