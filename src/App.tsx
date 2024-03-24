@@ -53,7 +53,11 @@ function App() {
         <p>Docs</p>
         <p>Blog</p>
       </HamburguerMenu>
-      <ListBox />
+      <ListBox>
+        <p>First Element</p>
+        <p>Second Element</p>
+        <p>Third Element</p>
+      </ListBox>
       <div id='WIP-container'>
         <h1>JDM-Components</h1>
         <h2>Work In Progress</h2>

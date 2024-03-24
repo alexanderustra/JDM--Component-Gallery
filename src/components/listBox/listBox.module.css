@@ -13,15 +13,15 @@
     background-image: linear-gradient(to bottom right, #23313F, #000A13);
 }
 
-.listContainer p {
+.listContainer * {
     height: 40px;
     border-radius: 5px;
     box-sizing: border-box;
     padding: 5px;
-    transition: background-image 0.5s; /* Agregar una transición */
+    transition: background-image 0.5s; 
 }
 
-.listContainer p:hover {
+.listContainer *:hover {
     backdrop-filter: blur(5px);
     background-image: linear-gradient(to bottom right, #3B497C, #FF00B8);
 }
