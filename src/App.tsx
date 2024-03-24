@@ -48,9 +48,10 @@ function App() {
       <Tooltip button='Hover Me' tipText=' Oh Hello There' position='left' backgroundColor='#FF4040' />
       <Tooltip button='Hover Me' tipText=' Oh Hello There' position='right' backgroundColor='#336CFF' />
       <HamburguerMenu>
-        <h2>Object 1</h2>
-        <h2>Object 2</h2>
-        <h2>Object 4</h2>
+        <p>Home</p>
+        <p>Components</p>
+        <p>Docs</p>
+        <p>Blog</p>
       </HamburguerMenu>
       <ListBox />
       <div id='WIP-container'>
