@@ -73,13 +73,13 @@
   }
 }
 /*BUTTON ICON*/
-.navIcon{
+.menuBtn{
     border-radius: 10px;
     width: 65px;
     height: 50px;
     border: none;
     background-color: #336CFF;
-    margin: 10px 10px;
+    margin: auto;
     position: relative;
     cursor: pointer;
     display: inline-block;
@@ -87,7 +87,7 @@
     -moz-box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.66);
     box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.66);
   }
-  .navIcon span{
+  .menuBtn span{
     background-color:#FFFFFF;
     position: absolute;
     border-radius: 2px;
@@ -95,34 +95,34 @@
     width:80%;
     height: 4px;
   }
-  .navIcon span:nth-child(1){
+  .menuBtn span:nth-child(1){
     top:0px;
     left: -5px;
   }
-  .navIcon span:nth-child(2){
+  .menuBtn span:nth-child(2){
     top:12px;
     left: -5px;
   }
-  .navIcon span:nth-child(3){
+  .menuBtn span:nth-child(3){
     bottom:-2px;
     left: -5px;
   }
-  .navIcon:not(.open):hover span:nth-child(1){
+  .menuBtn:not(.open):hover span:nth-child(1){
     transform: scaleX(.8);
   }
-  .navIcon:not(.open):hover span:nth-child(2){
+  .menuBtn:not(.open):hover span:nth-child(2){
     transform: scaleX(.5);
   }
-  .navIcon:not(.open):hover span:nth-child(3){
+  .menuBtn:not(.open):hover span:nth-child(3){
     transform: scaleX(.8);
   }
-  .navIcon.open span:nth-child(1){
+  .menuBtn.open span:nth-child(1){
     top: 13px;
   }
-  .navIcon.open span:nth-child(2){
+  .menuBtn.open span:nth-child(2){
     top:13px;
   }
-  .navIcon.open span:nth-child(3){
+  .menuBtn.open span:nth-child(3){
     top: 13px;
   }
   
