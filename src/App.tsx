@@ -29,7 +29,7 @@ const dangerAction = ()=> {
   alert("Not so Fine")
 }
 
-const arrayOfImgs = ["https://i.pinimg.com/564x/4e/9d/be/4e9dbebb1bd69da0095d4c74d5fa8d0e.jpg", "https://i.pinimg.com/originals/57/69/d3/5769d3551e9bdb967a8a8e8028d0e618.gif", "https://i.pinimg.com/564x/96/31/0c/96310ca833912dc9485b8850f7e22a9e.jpg","https://i.pinimg.com/564x/bd/93/a5/bd93a5c966035d611795a5439b147b13.jpg","https://i.pinimg.com/564x/16/12/d7/1612d739b0e00667f0c7d0fc21b0b399.jpg","https://i.pinimg.com/564x/fc/8f/ff/fc8fff58456de4161c28944643449382.jpg"]
+const arrayOfImgs = ["https://i.pinimg.com/564x/4e/9d/be/4e9dbebb1bd69da0095d4c74d5fa8d0e.jpg", "https://i.pinimg.com/originals/57/69/d3/5769d3551e9bdb967a8a8e8028d0e618.gif", "https://i.pinimg.com/564x/cd/2d/cc/cd2dcc0facea33703b8eecb231384ac9.jpg","https://i.pinimg.com/564x/bd/93/a5/bd93a5c966035d611795a5439b147b13.jpg","https://i.pinimg.com/564x/16/12/d7/1612d739b0e00667f0c7d0fc21b0b399.jpg","https://i.pinimg.com/564x/c1/2d/ff/c12dff67f4e113ed4c8153fd751fb5f0.jpg"]
 
 const arrayOfTitles = ['Title 1', 'Title 2' , 'Title 3', 'Title 4', 'Title 5','Title 6']
 
@@ -68,7 +68,6 @@ function App() {
         <p>Second Element</p>
         <p>Third Element</p>
       </ListBox>
-      <Carrusel imgs={arrayOfImgs}  titles={arrayOfTitles}/>
       <Tooltip button='Hover Me' tipText=' Oh Hello There' position='bottom' />
       <Tooltip button='Hover Me' tipText=' Oh Hello There' position='top' backgroundColor='#00A962' />
       <Tooltip button='Hover Me' tipText=' Oh Hello There' position='left' backgroundColor='#FF4040' />
@@ -76,6 +75,7 @@ function App() {
       <UserCard name='Marlon Morales' description='Rapper'  background img='https://i.pinimg.com/564x/40/79/ae/4079ae006e8f038c91ff82677ac627e5.jpg' />
       <UserCard name='Ignacio Fornés' description='Rapper' type='square' img='https://i.pinimg.com/564x/cb/13/fd/cb13fd7cded0a7b95aca77adf22a4cdf.jpg' />
       <Badge content={5} img='https://i.pinimg.com/564x/fd/25/16/fd2516d76a679f4e5069ae7acad52c81.jpg' />
+      <Carrusel imgs={arrayOfImgs}  titles={arrayOfTitles}/>
       <div id='WIP-container'>
         <h1>JDM-Components</h1>
         <h2>Work In Progress</h2>
