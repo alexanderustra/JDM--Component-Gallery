@@ -3,7 +3,7 @@
 }
 #root {
     margin: auto;
-    width:80%;
+    width:65%;
     flex-wrap: wrap;
     display: flex;
 }

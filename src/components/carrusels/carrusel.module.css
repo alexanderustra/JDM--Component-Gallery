@@ -1,0 +1,41 @@
+.carruselContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    width: auto;
+    height: auto;
+    margin-top: 40px;
+    backface-visibility: hidden;
+}
+.carruselImgContainer img {
+    cursor: pointer;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-radius: 10px;
+    width: 270px;
+    height: 370px;
+    box-sizing: border-box;
+    object-fit: cover;
+    -webkit-box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.66);
+    -moz-box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.66);
+    box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.66);
+    transition: .2s;
+}
+.carruselImgContainer img:hover {
+    transform: scale(1.04);
+}
+.carruselImgContainer h3{
+    margin-left:30%;
+    margin-bottom: -10px;
+    margin-top: 0px;
+    color: #464646;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.focusedImg {
+    margin: 0px;
+    z-index: 1;
+    transform: scale(1.2,1.15);
+}
