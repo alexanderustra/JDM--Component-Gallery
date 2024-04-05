@@ -18,6 +18,7 @@ import { Badge } from './components/badges/Badge'
 import { NavBar } from './components/navbars/NavBar'
 import { HamburguerMenu } from './components/menus/HamburgerMenu'
 import { Carrusel } from './components/carrusels/Carrusel'
+import { SearchBar } from './components/searchBars/SearchBar'
 
 const pressAction = ()=> {
   alert("yep, you pressed me")
@@ -33,6 +34,24 @@ const arrayOfImgs = ["https://i.pinimg.com/564x/4e/9d/be/4e9dbebb1bd69da0095d4c7
 
 const arrayOfTitles = ['Title 1', 'Title 2' , 'Title 3', 'Title 4', 'Title 5','Title 6']
 
+const jdmCars = [
+  "Toyota Supra",
+  "Nissan Skyline GT-R",
+  "Honda NSX",
+  "Subaru Impreza WRX STI",
+  "Mitsubishi Lancer Evolution",
+  "Mazda RX-7",
+  "Lexus LFA",
+  "Acura Integra Type R",
+  "Toyota AE86",
+  "Nissan Silvia",
+  "Mitsubishi 3000GT",
+  "Subaru BRZ",
+  "Honda S2000"
+];
+const searchResult = (result:string)=>{
+  alert(result)
+}
 function App() {
 
   return (
@@ -76,6 +95,7 @@ function App() {
       <UserCard name='Ignacio Fornés' description='Rapper' type='square' img='https://i.pinimg.com/564x/cb/13/fd/cb13fd7cded0a7b95aca77adf22a4cdf.jpg' />
       <Badge content={5} img='https://i.pinimg.com/564x/fd/25/16/fd2516d76a679f4e5069ae7acad52c81.jpg' />
       <Carrusel imgs={arrayOfImgs}  titles={arrayOfTitles}/>
+      <SearchBar style='colorful' data={jdmCars} onSelect={searchResult}/>
       <div id='WIP-container'>
         <h1>JDM-Components</h1>
         <h2>Work In Progress</h2>

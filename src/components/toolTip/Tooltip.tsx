@@ -10,7 +10,7 @@ interface ToolTipProps {
 
 const Tooltip: React.FC<ToolTipProps> = ({ button, tipText, position , backgroundColor }) => {
     const tooltipStyle = {
-        backgroundColor: backgroundColor || '#23313F'
+        backgroundColor: backgroundColor || '#23313F',
     };
     return (
         <div className={styles.tooltip} style={tooltipStyle}>

@@ -20,15 +20,10 @@
     background-color: transparent;
     border: 1px solid #336CFF;
     box-sizing: border-box;
-    transition: .5s;
     margin: 0px;
 }
-
-.primaryInput:hover {
-    border: 1.5px solid #336CFF;
-}
 .primaryInput:focus {
-    border: 2px solid #336CFF;
+    border: 2.5px solid #336CFF;
 }
 .label {
     height: 17px;
