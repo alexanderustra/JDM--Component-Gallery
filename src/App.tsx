@@ -56,7 +56,20 @@ function App() {
 
   return (
     <>
-      <NavBar width='85%' logoAlt='My Logo' logo='src\assets\logo.png' type='top-large' asset='hamburguerMenu'>
+      <NavBar width='85%' 
+          logoAlt='My Logo' 
+          logo='src\assets\logo.png' 
+          type='top-large' 
+          asset='hamburguerMenu'
+          menuItems={
+            <>
+                <p>Home</p>
+                <p>Components</p>
+                <p>Docs</p>
+                <p>Blog</p>
+            </>
+          }
+        >
         <h3>Item 1</h3>
         <h3>Item 2</h3>
         <h3>Item 3</h3>
@@ -95,7 +108,10 @@ function App() {
       <UserCard name='Ignacio Fornés' description='Rapper' type='square' img='https://i.pinimg.com/564x/cb/13/fd/cb13fd7cded0a7b95aca77adf22a4cdf.jpg' />
       <Badge content={5} img='https://i.pinimg.com/564x/fd/25/16/fd2516d76a679f4e5069ae7acad52c81.jpg' />
       <Carrusel imgs={arrayOfImgs}  titles={arrayOfTitles}/>
-      <SearchBar style='colorful' data={jdmCars} onSelect={searchResult}/>
+      <div>
+        <h3>Topic: JDM Cars</h3>
+       <SearchBar style='colorful' data={jdmCars} onSelect={searchResult}/>
+      </div>
       <div id='WIP-container'>
         <h1>JDM-Components</h1>
         <h2>Work In Progress</h2>

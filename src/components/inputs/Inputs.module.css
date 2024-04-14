@@ -4,6 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 260px;
+    height: 70px;
     margin: 10px;
 }
 .primaryInput {

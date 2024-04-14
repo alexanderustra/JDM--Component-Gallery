@@ -10,8 +10,9 @@ interface NavBarProps {
     children: React.ReactNode;
     type:'top-large' | 'lat'
     asset?: "searchBar" | "hamburguerMenu"
+    menuItems?: React.ReactNode;
 }
-export function NavBar ({logo,logoAlt,children,type,width,asset}:NavBarProps) {
+export function NavBar ({logo,logoAlt,children,type,width,asset, menuItems}:NavBarProps) {
     const navbarStyle = {
         width: width
     }
@@ -21,10 +22,7 @@ export function NavBar ({logo,logoAlt,children,type,width,asset}:NavBarProps) {
                 return <Input name='searchBar' />;
             case "hamburguerMenu":
                 return <HamburguerMenu background='none'>
-                <p>Home</p>
-                <p>Components</p>
-                <p>Docs</p>
-                <p>Blog</p>
+                {menuItems}
               </HamburguerMenu>
             default:
                 return null;

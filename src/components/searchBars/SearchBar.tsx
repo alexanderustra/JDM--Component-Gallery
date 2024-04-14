@@ -3,8 +3,8 @@ import React, { useState, ChangeEvent } from 'react';
 
 interface searchBarProps {
     style?: 'colorful';
-    data: string[];
-    onSelect: (name: string) => void; // Función de devolución de llamada para manejar la selección
+    data?: string[];
+    onSelect: (name: string) => void; 
 }
 
 export function SearchBar({ style, data, onSelect }: searchBarProps) {
@@ -56,7 +56,7 @@ export function SearchBar({ style, data, onSelect }: searchBarProps) {
     );
 
     const handleClick = (name: string) => {
-        onSelect(name); // Llama a la función de devolución de llamada con el nombre seleccionado
+        onSelect(name);
     };
 
     return (
