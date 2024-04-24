@@ -3,7 +3,7 @@ import { items } from './textSamples'
 import { lorem } from './textSamples'
 
 import { Button } from './components/buttons/Button'
-import { Input } from './components/inputs/Input'
+import { PrimaryInput } from './components/inputs/PrimaryInput'
 import { Chip } from './components/chips/Chip'
 import { Swip } from './components/swips/Swip'
 import { PrimaryCard } from './components/cards/PrimaryCard'
@@ -85,7 +85,7 @@ function App() {
       <Button text='Success' type='success' action={successAction} />
       <Button text='Danger' type='danger' action={dangerAction} />
       <Button text='Disabled' type='disabled' />
-      <Input label='Label' name='name' placeholder='Design System'/>
+      <PrimaryInput label='Label' name='name' placeholder='Design System'/>
       <Chip text='Default Chip' />
       <Chip text='Bordered' type='bordered' color='#00A962' />
       <Chip text='With Shadow' type='shadow' color='#FF4040' />

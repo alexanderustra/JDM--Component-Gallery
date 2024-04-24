@@ -6,9 +6,10 @@ interface ChipsProps {
     type?:  "shadow" | "bordered"
 }
 export function Chip ({type,color,text}:ChipsProps) {
-    const boxShadow = `0px 2px 6px 1px ${color}`;
+    const boxShadow = color ?  `0px 2px 6px 1px ${color}` : `0px 2px 6px 1px #336CFF`;
+    const borderColor = color ? `2px solid ${color}` :  "#336CFF"
     const chipStyle = {
-        border: type === "bordered" ? `2px solid ${color}` : 'none',
+        border: type === "bordered" ? `2px solid ${borderColor}` : 'none',
         boxShadow: type === "shadow" ? boxShadow : "none" ,
         backgroundColor: type === "bordered" ? "transparent" : color || '#336CFF'
     };

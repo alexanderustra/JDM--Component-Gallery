@@ -38,3 +38,5 @@ yarn.lock
 
 # Ignorar archivos de despliegue
 deploy/
+
+*storybook.log

@@ -1,6 +1,6 @@
 import styles from './navbar.module.css'
 
-import { Input } from '../inputs/Input';
+import { Input } from '../inputs/PrimaryInput';
 import { HamburguerMenu } from '../menus/HamburgerMenu';
 
 interface NavBarProps {

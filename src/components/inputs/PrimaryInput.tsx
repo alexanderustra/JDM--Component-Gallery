@@ -5,7 +5,7 @@ interface inputPops {
     type?: "text" | "email" | "number"
     name: string
 }
-export function Input ({label,placeholder,type,name}:inputPops) {
+export function PrimaryInput ({label,placeholder,type,name}:inputPops) {
     let content = null;
   if (label) {
       content = <label htmlFor={name} className={styles.label}>{label}</label>;

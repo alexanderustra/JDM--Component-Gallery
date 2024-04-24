@@ -3,12 +3,12 @@
 .inputContainer {
     display: flex;
     flex-wrap: wrap;
-    width: 260px;
+    width: 100%;
     height: 70px;
     margin: 10px;
 }
-.primaryInput {
-    width: 260px;
+.primaryInput , .select{
+    width: 100%;
     height: 45px;
     border-radius: 10px;
     outline: none;
@@ -34,3 +34,49 @@
     font-style: normal;
     color: #464646;
 }
+
+/*SELECT*/
+
+.select {
+    user-select: none;
+    box-sizing: border-box;
+    padding: 12px;
+    width: 260px;
+    height: 50px;
+}
+.select button {
+    position: relative;
+    left: 200px;
+    background-color: transparent;
+    border: none;
+}
+
+.select ul {
+    box-sizing: border-box;
+    padding: 10px;
+    margin-left: -12px;
+    min-width:257px;
+    width:fit-content;
+    height: auto;
+    border: 1px solid #336CFF;
+    border-radius: 10px;
+}
+.select li {
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 7px;
+    min-width: 100%;
+    width: fit-content;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style: none;
+    transition: .1s;
+}
+
+li:hover {
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #336CFF;
+}
+
