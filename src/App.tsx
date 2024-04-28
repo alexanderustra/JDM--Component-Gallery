@@ -19,6 +19,8 @@ import { NavBar } from './components/navbars/NavBar'
 import { HamburguerMenu } from './components/menus/HamburgerMenu'
 import { Carrusel } from './components/carrusels/Carrusel'
 import { SearchBar } from './components/searchBars/SearchBar'
+import { Select } from './components/inputs/Select'
+import { PrimaryModal } from './components/modals/PrimaryModal'
 
 const pressAction = ()=> {
   alert("yep, you pressed me")

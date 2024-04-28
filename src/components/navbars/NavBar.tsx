@@ -1,6 +1,6 @@
 import styles from './navbar.module.css'
 
-import { Input } from '../inputs/PrimaryInput';
+import { PrimaryInput } from '../inputs/PrimaryInput';
 import { HamburguerMenu } from '../menus/HamburgerMenu';
 
 interface NavBarProps {
@@ -19,7 +19,7 @@ export function NavBar ({logo,logoAlt,children,type,width,asset, menuItems}:NavB
     const renderAssetComponent = () => {
         switch (asset) {
             case "searchBar":
-                return <Input name='searchBar' />;
+                return <PrimaryInput name='searchBar' />;
             case "hamburguerMenu":
                 return <HamburguerMenu background='none'>
                 {menuItems}
