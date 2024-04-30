@@ -15,10 +15,35 @@ export const Modal= () => (
     <PrimaryModal 
         active
         title="Title" 
-        type="long"
-        onAgree={() => handleClick('Agree')}
-        onDeny={() => handleClick('Deny')}
+        agreeBtn="Accept"
+        denyBtn="Refuse"
+        onAgree={() => handleClick('Accept')}
+        onDeny={() => handleClick('Refuse')}
         >
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos exercitationem, quod quae amet accusantium sint illo quidem voluptas ea veniam consequuntur.</p>
     </PrimaryModal>
+);
+export const LongModal= () => (
+    <PrimaryModal 
+        active
+        title="Title" 
+        type="long"
+        agreeBtn="Accept"
+        denyBtn="Refuse"
+        onAgree={() => handleClick('Accept')}
+        onDeny={() => handleClick('Refuse')}
+        >
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos exercitationem, quod quae amet accusantium sint illo quidem voluptas ea veniam consequuntur.</p>
+    </PrimaryModal>
+);
+export const ShortModal= () => (
+    <PrimaryModal 
+        active
+        title="Title" 
+        type="short"
+        agreeBtn="Accept"
+        denyBtn="Refuse"
+        onAgree={() => handleClick('Accept')}
+        onDeny={() => handleClick('Refuse')}
+        />
 );

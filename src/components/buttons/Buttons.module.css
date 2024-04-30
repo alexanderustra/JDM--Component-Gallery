@@ -2,6 +2,9 @@
 
 .primaryButton , .success ,.danger ,.disabled {
     width: fit-content;
+    box-sizing: border-box;
+    padding-left:12px ;
+    padding-right: 12px;
     height: 40px;
     border: none;
     cursor: pointer;

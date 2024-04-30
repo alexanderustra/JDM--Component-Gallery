@@ -13,15 +13,12 @@ import { PrimaryActionCard } from './components/cards/PrimaryActionCard'
 import SimpleAccordion from './components/accordeons/SimpleAccordion'
 import Tooltip from './components/toolTip/Tooltip'
 import { ListBox } from './components/listBox/ListBox'
-import { UserCard } from './components/UserCards/UserCard'
+import { UserCard } from './components/badges/UserCard'
 import { Badge } from './components/badges/Badge'
 import { NavBar } from './components/navbars/NavBar'
 import { HamburguerMenu } from './components/menus/HamburgerMenu'
 import { Carrusel } from './components/carrusels/Carrusel'
 import { SearchBar } from './components/searchBars/SearchBar'
-import { Select } from './components/inputs/Select'
-import { PrimaryModal } from './components/modals/PrimaryModal'
-
 const pressAction = ()=> {
   alert("yep, you pressed me")
 }
@@ -108,7 +105,6 @@ function App() {
       <Tooltip button='Hover Me' tipText=' Oh Hello There' position='right' backgroundColor='#336CFF' />
       <UserCard name='Marlon Morales' description='Rapper'  background img='https://i.pinimg.com/564x/40/79/ae/4079ae006e8f038c91ff82677ac627e5.jpg' />
       <UserCard name='Ignacio Fornés' description='Rapper' type='square' img='https://i.pinimg.com/564x/cb/13/fd/cb13fd7cded0a7b95aca77adf22a4cdf.jpg' />
-      <Badge content={5} img='https://i.pinimg.com/564x/fd/25/16/fd2516d76a679f4e5069ae7acad52c81.jpg' />
       <Carrusel imgs={arrayOfImgs}  titles={arrayOfTitles}/>
       <div>
         <h3>Topic: JDM Cars</h3>

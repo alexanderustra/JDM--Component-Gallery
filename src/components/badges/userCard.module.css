@@ -1,0 +1,67 @@
+.circle,
+.square {
+  display: flex;
+  flex-wrap: wrap;
+  color: #ffffff;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 38px 38px 38px 38px;
+  transition: 0.2s;
+}
+.hover {
+  transition: 0.2s;
+  transform: scale(1.05);
+}
+.square {
+  border-radius: 10px;
+}
+.square *,
+.circle * {
+  margin: auto;
+}
+.square img,
+.circle img {
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-right: -10px;
+  margin-bottom: 5px;
+  width: 64px;
+  object-fit: cover;
+  border-radius: 70px;
+}
+.square img {
+  border-radius: 10px;
+}
+
+/*TEXT*/
+.textContainer {
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 20px;
+  margin-right:20px ;
+}
+.square h4 , .circle h4 {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 18px;
+  max-width: 200px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+.square h6 , .circle h6 {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  max-width: 200px;
+  font-size: 15px;
+  color: #d3d3d3;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+  font-style: normal;
+}
+

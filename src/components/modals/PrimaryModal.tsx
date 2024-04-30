@@ -6,11 +6,13 @@ interface modalProps {
     active: boolean
     type?: 'long' | 'short'
     title:string
+    agreeBtn?:string 
+    denyBtn?:string 
     children?: ReactNode;
     onAgree: () => void 
     onDeny: () => void 
 }
-export function PrimaryModal ({children, title, onAgree , onDeny , type, active}:modalProps) {
+export function PrimaryModal ({children, title, onAgree , onDeny , type, active , agreeBtn,denyBtn}:modalProps) {
     const [isModalOpened,setIsModalOpened] = useState(active)
 
     const handleDeny =()=>{
@@ -26,22 +28,25 @@ export function PrimaryModal ({children, title, onAgree , onDeny , type, active}
         display: isModalOpened ? "block" : 'none'
     };
     const buttonLeftStyles = {
-        marginRight: type === 'short' ? '15px' : '40px'
+        marginLeft: type === 'short' ? '0px' : '20px'
     };
 
     const buttonRightStyles = {
-        marginLeft: type === 'short' ? '15px' : '40px'
+        marginRight: type === 'short' ? '0px' : '20px'
     };
+    const titleStyle = {
+        fontSize:  type === 'short' ? '20px' : '25px'
+    }
     
     return (
         <div className={styles.background} style={isModalOpened ? {display: 'flex'} : {display:'none'}}>
             <div className={styles.primaryModal} style={modalStyles}>
-            <h3>{title}</h3>
+            <h3 style={titleStyle} >{title}</h3>
             {type !== 'short' && children}
             <hr />
             <div className= {styles.buttonContainer}>
-                <Button action={handleDeny} text='Deny' type='danger'  style={buttonLeftStyles} />
-                <Button action={handleAgree} text='Agree' type='success'  style={buttonRightStyles} />
+                <Button action={handleDeny} text={denyBtn || 'Deny'} type='danger'  style={buttonLeftStyles} />
+                <Button action={handleAgree} text={agreeBtn || 'Agree'} type='success'  style={buttonRightStyles} />
             </div>
          </div>
         </div>
