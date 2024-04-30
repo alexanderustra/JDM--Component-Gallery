@@ -1,5 +1,4 @@
 import styles from './userCard.module.css'
-import { useState } from 'react'
 
 interface userProps {
     img:string
@@ -11,7 +10,7 @@ interface userProps {
 }
 
 export function UserCard( {img,name,description,background,type,longText}:userProps) {
-    const [isHovered, setIsHovered] = useState(false);
+
     const userCardStyles = {
         background: background ? 'linear-gradient(to bottom right, #23313F, #000A13)' : 'transparent',
         color: background ? '#FFFFFF' : '#464646', 
@@ -27,21 +26,10 @@ export function UserCard( {img,name,description,background,type,longText}:userPr
     const imgStyles =  {
         height: longText ? 'auto' : '64px'
     }
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-    };
 
-    const handleMouseLeave = () => {
-        setIsHovered(false);
-    };
-
-    const hover = isHovered ? styles.hover : '';
-    
     return (
         <div 
-            onMouseEnter={handleMouseEnter} 
-            onMouseLeave={handleMouseLeave} 
-            className={`${type === 'square' ? styles.square : styles.circle} ${hover}`} 
+            className={`${type === 'square' ? styles.square : styles.circle}`} 
             style={userCardStyles}
         >
             <img src={img} alt={`${name} Profile Picture`} style={imgStyles}  />
