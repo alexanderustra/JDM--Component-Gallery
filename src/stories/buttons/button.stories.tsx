@@ -16,9 +16,11 @@ export const DangerButton = () => (
 export const SuccessButton = () => (
     <Button text="Success" type="success" />
 );
-
 export const DisabledButton = () => (
     <Button text="Disabled" type="disabled" />
+);
+export const ContentFitButton = () => (
+  <Button text="Button to check if fits content"  />
 );
   
 

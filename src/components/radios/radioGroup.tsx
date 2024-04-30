@@ -1,22 +1,26 @@
 import React , {useState} from 'react';
 import styles from './radios.module.css'
-interface radioProps {
-    label?:string
-    placeholder?: string;
-    children: React.ReactElement<primaryRadioProps>[];
-}
 
 interface primaryRadioProps {
     label:string
     id:string 
     name: string
     checked:boolean
-    onChange: () => void
+    onClick: (value: string) => void;
 }
-export function RadioGroup({ children, label }:radioProps) {
+interface RadioGroupProps {
+    label?: string;
+    placeholder?: string;
+    onChange: (value: string) => void; 
+    children: React.ReactElement<primaryRadioProps>[];
+}
+
+export function RadioGroup({ children, label, onChange }: RadioGroupProps) {
     const [selectedRadio, setSelectedRadio] = useState<string>('');
+
     const handleRadioChange = (radioId: string) => {
-        setSelectedRadio(radioId);
+        setSelectedRadio(radioId)
+        onChange(radioId); 
     };
 
     return (
@@ -27,7 +31,7 @@ export function RadioGroup({ children, label }:radioProps) {
                     if (React.isValidElement(child)) {
                         return React.cloneElement(child, {
                             checked: selectedRadio === child.props.id,
-                            onChange: () => handleRadioChange(child.props.id),
+                            onClick: handleRadioChange, 
                         });
                     }
                     return child;
