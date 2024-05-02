@@ -1,0 +1,667 @@
+{
+    "extension": "linecounter",
+    "version": "0.2.7",
+    "workspace": "c:\\Users\\aleus\\OneDrive\\Escritorio\\Design-System",
+    "linecount": [
+        {
+            "version": "0.2.7",
+            "counttime": "2024-05-01 20:55:44",
+            "filesum": 95,
+            "codesum": 14583,
+            "commentsum": 88,
+            "blanksum": 227,
+            "statistics": {
+                ".html": {
+                    "code": 27,
+                    "comment": 0,
+                    "blank": 1
+                },
+                ".ts": {
+                    "code": 37,
+                    "comment": 2,
+                    "blank": 4
+                },
+                ".json": {
+                    "code": 12198,
+                    "comment": 2,
+                    "blank": 68
+                },
+                ".sh": {
+                    "code": 8,
+                    "comment": 8,
+                    "blank": 7
+                },
+                ".md": {
+                    "code": 5,
+                    "comment": 0,
+                    "blank": 1
+                },
+                ".css": {
+                    "code": 1013,
+                    "comment": 12,
+                    "blank": 29
+                },
+                ".svg": {
+                    "code": 68,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".tsx": {
+                    "code": 1079,
+                    "comment": 0,
+                    "blank": 105
+                },
+                ".mdx": {
+                    "code": 90,
+                    "comment": 0,
+                    "blank": 6
+                },
+                ".yml": {
+                    "code": 19,
+                    "comment": 0,
+                    "blank": 5
+                },
+                "": {
+                    "code": 9,
+                    "comment": 32,
+                    "blank": 1
+                },
+                ".cjs": {
+                    "code": 14,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".js": {
+                    "code": 16,
+                    "comment": 32,
+                    "blank": 0
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 0,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": ".eslintrc.cjs"
+                },
+                {
+                    "blank": 5,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": ".github\\workflows\\main.yml"
+                },
+                {
+                    "blank": 1,
+                    "code": 9,
+                    "comment": 32,
+                    "filename": ".gitignore"
+                },
+                {
+                    "blank": 1,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": ".storybook\\main.ts"
+                },
+                {
+                    "blank": 2,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": ".storybook\\preview.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 16,
+                    "comment": 32,
+                    "filename": "dist\\assets\\index-2cdc8240.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\assets\\index-440b9120.css"
+                },
+                {
+                    "filename": "dist\\assets\\logo-c1345127.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 1,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "dist\\index.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "dist\\vite.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "index.html"
+                },
+                {
+                    "blank": 66,
+                    "code": 12123,
+                    "comment": 0,
+                    "filename": "package-lock.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 44,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public\\vite.svg"
+                },
+                {
+                    "blank": 1,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "README.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 34,
+                    "comment": 0,
+                    "filename": "src\\App.css"
+                },
+                {
+                    "blank": 7,
+                    "code": 114,
+                    "comment": 0,
+                    "filename": "src\\App.tsx"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src\\assets\\Arrow bottom.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src\\assets\\ArrowLeft.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src\\assets\\ArrowRight.svg"
+                },
+                {
+                    "filename": "src\\assets\\logo.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "src\\assets\\react.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "src\\assets\\search.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src\\assets\\Trailing Icon.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src\\assets\\up arrow.svg"
+                },
+                {
+                    "blank": 2,
+                    "code": 36,
+                    "comment": 2,
+                    "filename": "src\\components\\accordeons\\accordions.module.css"
+                },
+                {
+                    "blank": 7,
+                    "code": 33,
+                    "comment": 0,
+                    "filename": "src\\components\\accordeons\\SimpleAccordion.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "src\\components\\badges\\Badge.tsx"
+                },
+                {
+                    "blank": 0,
+                    "code": 37,
+                    "comment": 0,
+                    "filename": "src\\components\\badges\\badges.module.css"
+                },
+                {
+                    "blank": 2,
+                    "code": 66,
+                    "comment": 1,
+                    "filename": "src\\components\\badges\\userCard.module.css"
+                },
+                {
+                    "blank": 5,
+                    "code": 37,
+                    "comment": 0,
+                    "filename": "src\\components\\badges\\UserCard.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src\\components\\buttons\\Button.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 60,
+                    "comment": 3,
+                    "filename": "src\\components\\buttons\\Buttons.module.css"
+                },
+                {
+                    "blank": 1,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "src\\components\\cards\\BackgroundImgCard.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 140,
+                    "comment": 2,
+                    "filename": "src\\components\\cards\\cards.module.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\components\\cards\\CropImgCard.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\components\\cards\\PrimaryActionCard.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "src\\components\\cards\\PrimaryCard.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 40,
+                    "comment": 0,
+                    "filename": "src\\components\\carrusels\\carrusel.module.css"
+                },
+                {
+                    "blank": 8,
+                    "code": 40,
+                    "comment": 0,
+                    "filename": "src\\components\\carrusels\\Carrusel.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\components\\chips\\Chip.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "src\\components\\chips\\chips.module.css"
+                },
+                {
+                    "blank": 6,
+                    "code": 104,
+                    "comment": 2,
+                    "filename": "src\\components\\inputs\\Inputs.module.css"
+                },
+                {
+                    "blank": 4,
+                    "code": 68,
+                    "comment": 0,
+                    "filename": "src\\components\\inputs\\PrimaryInput.tsx"
+                },
+                {
+                    "blank": 7,
+                    "code": 52,
+                    "comment": 0,
+                    "filename": "src\\components\\inputs\\Select.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 32,
+                    "comment": 0,
+                    "filename": "src\\components\\inputs\\Textarea.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "src\\components\\listBox\\listBox.module.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src\\components\\listBox\\ListBox.tsx"
+                },
+                {
+                    "blank": 4,
+                    "code": 35,
+                    "comment": 0,
+                    "filename": "src\\components\\menus\\HamburgerMenu.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 124,
+                    "comment": 1,
+                    "filename": "src\\components\\menus\\menus.module.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 51,
+                    "comment": 0,
+                    "filename": "src\\components\\modals\\modals.module.css"
+                },
+                {
+                    "blank": 4,
+                    "code": 50,
+                    "comment": 0,
+                    "filename": "src\\components\\modals\\PrimaryModal.tsx"
+                },
+                {
+                    "blank": 0,
+                    "code": 45,
+                    "comment": 0,
+                    "filename": "src\\components\\navbars\\navbar.module.css"
+                },
+                {
+                    "blank": 2,
+                    "code": 38,
+                    "comment": 0,
+                    "filename": "src\\components\\navbars\\NavBar.tsx"
+                },
+                {
+                    "blank": 6,
+                    "code": 45,
+                    "comment": 0,
+                    "filename": "src\\components\\radios\\PrimaryRadio.tsx"
+                },
+                {
+                    "blank": 4,
+                    "code": 38,
+                    "comment": 0,
+                    "filename": "src\\components\\radios\\radioGroup.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 57,
+                    "comment": 1,
+                    "filename": "src\\components\\radios\\radios.module.css"
+                },
+                {
+                    "blank": 2,
+                    "code": 74,
+                    "comment": 0,
+                    "filename": "src\\components\\searchBars\\searchBar.module.css"
+                },
+                {
+                    "blank": 9,
+                    "code": 74,
+                    "comment": 0,
+                    "filename": "src\\components\\searchBars\\SearchBar.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "src\\components\\swips\\Swip.tsx"
+                },
+                {
+                    "blank": 0,
+                    "code": 27,
+                    "comment": 0,
+                    "filename": "src\\components\\swips\\swips.module.css"
+                },
+                {
+                    "blank": 3,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\components\\toolTip\\Tooltip.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 67,
+                    "comment": 0,
+                    "filename": "src\\components\\toolTip\\tooltips.module.css"
+                },
+                {
+                    "blank": 7,
+                    "code": 8,
+                    "comment": 8,
+                    "filename": "src\\deploy.sh"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "src\\index.css"
+                },
+                {
+                    "blank": 1,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\main.tsx"
+                },
+                {
+                    "filename": "src\\stories\\assets\\accessibility.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\stories\\assets\\accessibility.svg"
+                },
+                {
+                    "filename": "src\\stories\\assets\\addon-library.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\stories\\assets\\assets.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\stories\\assets\\avif-test-image.avif",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\stories\\assets\\context.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "src\\stories\\assets\\discord.svg"
+                },
+                {
+                    "filename": "src\\stories\\assets\\docs.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\stories\\assets\\figma-plugin.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src\\stories\\assets\\github.svg"
+                },
+                {
+                    "filename": "src\\stories\\assets\\share.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\stories\\assets\\styling.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\stories\\assets\\testing.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\stories\\assets\\theming.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "src\\stories\\assets\\tutorials.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\stories\\assets\\youtube.svg"
+                },
+                {
+                    "blank": 2,
+                    "code": 41,
+                    "comment": 0,
+                    "filename": "src\\stories\\badges\\badges.stories.tsx"
+                },
+                {
+                    "blank": 5,
+                    "code": 21,
+                    "comment": 0,
+                    "filename": "src\\stories\\buttons\\button.stories.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "src\\stories\\chips\\chips.stories.tsx"
+                },
+                {
+                    "blank": 6,
+                    "code": 90,
+                    "comment": 0,
+                    "filename": "src\\stories\\Configure.mdx"
+                },
+                {
+                    "blank": 2,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "src\\stories\\inputs\\input.stories.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "src\\stories\\inputs\\select.stories.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 47,
+                    "comment": 0,
+                    "filename": "src\\stories\\modals\\primaryModal.stories.tsx"
+                },
+                {
+                    "blank": 4,
+                    "code": 27,
+                    "comment": 0,
+                    "filename": "src\\stories\\radios\\radios.stories.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "src\\textSamples.tsx"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 1,
+                    "filename": "src\\vite-env.d.ts"
+                },
+                {
+                    "blank": 2,
+                    "code": 21,
+                    "comment": 2,
+                    "filename": "tsconfig.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "tsconfig.node.json"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 1,
+                    "filename": "vite.config.ts"
+                }
+            ]
+        }
+    ]
+}

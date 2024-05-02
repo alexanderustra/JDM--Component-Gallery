@@ -3,7 +3,6 @@ import { items } from './textSamples'
 import { lorem } from './textSamples'
 
 import { Button } from './components/buttons/Button'
-import { PrimaryInput } from './components/inputs/PrimaryInput'
 import { Chip } from './components/chips/Chip'
 import { Swip } from './components/swips/Swip'
 import { PrimaryCard } from './components/cards/PrimaryCard'
@@ -14,7 +13,6 @@ import SimpleAccordion from './components/accordeons/SimpleAccordion'
 import Tooltip from './components/toolTip/Tooltip'
 import { ListBox } from './components/listBox/ListBox'
 import { UserCard } from './components/badges/UserCard'
-import { Badge } from './components/badges/Badge'
 import { NavBar } from './components/navbars/NavBar'
 import { HamburguerMenu } from './components/menus/HamburgerMenu'
 import { Carrusel } from './components/carrusels/Carrusel'
@@ -84,7 +82,6 @@ function App() {
       <Button text='Success' type='success' action={successAction} />
       <Button text='Danger' type='danger' action={dangerAction} />
       <Button text='Disabled' type='disabled' />
-      <PrimaryInput label='Label' name='name' placeholder='Design System'/>
       <Chip text='Default Chip' />
       <Chip text='Bordered' type='bordered' color='#00A962' />
       <Chip text='With Shadow' type='shadow' color='#FF4040' />

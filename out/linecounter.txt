@@ -1,0 +1,124 @@
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2024-05-01 20:55:44
+count workspace : c:\Users\aleus\OneDrive\Escritorio\Design-System
+total files : 95
+total code lines : 14583
+total comment lines : 88
+total blank lines : 227
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |          .html|             27|              0|              1|   0.19|
+   |            .ts|             37|              2|              4|   0.25|
+   |          .json|          12198|              2|             68|     84|
+   |            .sh|              8|              8|              7|  0.055|
+   |            .md|              5|              0|              1|  0.034|
+   |           .css|           1013|             12|             29|    6.9|
+   |           .svg|             68|              0|              0|   0.47|
+   |           .tsx|           1079|              0|            105|    7.4|
+   |           .mdx|             90|              0|              6|   0.62|
+   |           .yml|             19|              0|              5|   0.13|
+   |               |              9|             32|              1|  0.062|
+   |           .cjs|             14|              0|              0|  0.096|
+   |            .js|             16|             32|              0|   0.11|
+   -------------------------------------------------------------------------
+.eslintrc.cjs, code is 14, comment is 0, blank is 0.
+.github\workflows\main.yml, code is 19, comment is 0, blank is 5.
+.gitignore, code is 9, comment is 32, blank is 1.
+.storybook\main.ts, code is 19, comment is 0, blank is 1.
+.storybook\preview.ts, code is 12, comment is 0, blank is 2.
+dist\assets\index-2cdc8240.js, code is 16, comment is 32, blank is 0.
+dist\assets\index-440b9120.css, code is 1, comment is 0, blank is 0.
+dist\assets\logo-c1345127.png, it is a binary file.
+dist\index.html, code is 14, comment is 0, blank is 1.
+dist\vite.svg, code is 1, comment is 0, blank is 0.
+index.html, code is 13, comment is 0, blank is 0.
+package-lock.json, code is 12123, comment is 0, blank is 66.
+package.json, code is 44, comment is 0, blank is 0.
+public\vite.svg, code is 1, comment is 0, blank is 0.
+README.md, code is 5, comment is 0, blank is 1.
+src\App.css, code is 34, comment is 0, blank is 0.
+src\App.tsx, code is 114, comment is 0, blank is 7.
+src\assets\Arrow bottom.svg, code is 3, comment is 0, blank is 0.
+src\assets\ArrowLeft.svg, code is 3, comment is 0, blank is 0.
+src\assets\ArrowRight.svg, code is 3, comment is 0, blank is 0.
+src\assets\logo.png, it is a binary file.
+src\assets\react.svg, code is 1, comment is 0, blank is 0.
+src\assets\search.svg, code is 11, comment is 0, blank is 0.
+src\assets\Trailing Icon.svg, code is 3, comment is 0, blank is 0.
+src\assets\up arrow.svg, code is 3, comment is 0, blank is 0.
+src\components\accordeons\accordions.module.css, code is 36, comment is 2, blank is 2.
+src\components\accordeons\SimpleAccordion.tsx, code is 33, comment is 0, blank is 7.
+src\components\badges\Badge.tsx, code is 13, comment is 0, blank is 1.
+src\components\badges\badges.module.css, code is 37, comment is 0, blank is 0.
+src\components\badges\userCard.module.css, code is 66, comment is 1, blank is 2.
+src\components\badges\UserCard.tsx, code is 37, comment is 0, blank is 5.
+src\components\buttons\Button.tsx, code is 17, comment is 0, blank is 3.
+src\components\buttons\Buttons.module.css, code is 60, comment is 3, blank is 1.
+src\components\cards\BackgroundImgCard.tsx, code is 16, comment is 0, blank is 1.
+src\components\cards\cards.module.css, code is 140, comment is 2, blank is 3.
+src\components\cards\CropImgCard.tsx, code is 20, comment is 0, blank is 0.
+src\components\cards\PrimaryActionCard.tsx, code is 20, comment is 0, blank is 1.
+src\components\cards\PrimaryCard.tsx, code is 13, comment is 0, blank is 1.
+src\components\carrusels\carrusel.module.css, code is 40, comment is 0, blank is 2.
+src\components\carrusels\Carrusel.tsx, code is 40, comment is 0, blank is 8.
+src\components\chips\Chip.tsx, code is 20, comment is 0, blank is 1.
+src\components\chips\chips.module.css, code is 25, comment is 0, blank is 1.
+src\components\inputs\Inputs.module.css, code is 104, comment is 2, blank is 6.
+src\components\inputs\PrimaryInput.tsx, code is 68, comment is 0, blank is 4.
+src\components\inputs\Select.tsx, code is 52, comment is 0, blank is 7.
+src\components\inputs\Textarea.tsx, code is 32, comment is 0, blank is 2.
+src\components\listBox\listBox.module.css, code is 25, comment is 0, blank is 2.
+src\components\listBox\ListBox.tsx, code is 17, comment is 0, blank is 0.
+src\components\menus\HamburgerMenu.tsx, code is 35, comment is 0, blank is 4.
+src\components\menus\menus.module.css, code is 124, comment is 1, blank is 3.
+src\components\modals\modals.module.css, code is 51, comment is 0, blank is 0.
+src\components\modals\PrimaryModal.tsx, code is 50, comment is 0, blank is 4.
+src\components\navbars\navbar.module.css, code is 45, comment is 0, blank is 0.
+src\components\navbars\NavBar.tsx, code is 38, comment is 0, blank is 2.
+src\components\radios\PrimaryRadio.tsx, code is 45, comment is 0, blank is 6.
+src\components\radios\radioGroup.tsx, code is 38, comment is 0, blank is 4.
+src\components\radios\radios.module.css, code is 57, comment is 1, blank is 2.
+src\components\searchBars\searchBar.module.css, code is 74, comment is 0, blank is 2.
+src\components\searchBars\SearchBar.tsx, code is 74, comment is 0, blank is 9.
+src\components\swips\Swip.tsx, code is 14, comment is 0, blank is 3.
+src\components\swips\swips.module.css, code is 27, comment is 0, blank is 0.
+src\components\toolTip\Tooltip.tsx, code is 20, comment is 0, blank is 3.
+src\components\toolTip\tooltips.module.css, code is 67, comment is 0, blank is 3.
+src\deploy.sh, code is 8, comment is 8, blank is 7.
+src\index.css, code is 0, comment is 0, blank is 0.
+src\main.tsx, code is 9, comment is 0, blank is 1.
+src\stories\assets\accessibility.png, it is a binary file.
+src\stories\assets\accessibility.svg, code is 5, comment is 0, blank is 0.
+src\stories\assets\addon-library.png, it is a binary file.
+src\stories\assets\assets.png, it is a binary file.
+src\stories\assets\avif-test-image.avif, it is a binary file.
+src\stories\assets\context.png, it is a binary file.
+src\stories\assets\discord.svg, code is 15, comment is 0, blank is 0.
+src\stories\assets\docs.png, it is a binary file.
+src\stories\assets\figma-plugin.png, it is a binary file.
+src\stories\assets\github.svg, code is 3, comment is 0, blank is 0.
+src\stories\assets\share.png, it is a binary file.
+src\stories\assets\styling.png, it is a binary file.
+src\stories\assets\testing.png, it is a binary file.
+src\stories\assets\theming.png, it is a binary file.
+src\stories\assets\tutorials.svg, code is 12, comment is 0, blank is 0.
+src\stories\assets\youtube.svg, code is 4, comment is 0, blank is 0.
+src\stories\badges\badges.stories.tsx, code is 41, comment is 0, blank is 2.
+src\stories\buttons\button.stories.tsx, code is 21, comment is 0, blank is 5.
+src\stories\chips\chips.stories.tsx, code is 15, comment is 0, blank is 3.
+src\stories\Configure.mdx, code is 90, comment is 0, blank is 6.
+src\stories\inputs\input.stories.tsx, code is 58, comment is 0, blank is 2.
+src\stories\inputs\select.stories.tsx, code is 16, comment is 0, blank is 2.
+src\stories\modals\primaryModal.stories.tsx, code is 47, comment is 0, blank is 2.
+src\stories\radios\radios.stories.tsx, code is 27, comment is 0, blank is 4.
+src\textSamples.tsx, code is 19, comment is 0, blank is 1.
+src\vite-env.d.ts, code is 0, comment is 1, blank is 0.
+tsconfig.json, code is 21, comment is 2, blank is 2.
+tsconfig.node.json, code is 10, comment is 0, blank is 0.
+vite.config.ts, code is 6, comment is 1, blank is 1.
+===============================================================================

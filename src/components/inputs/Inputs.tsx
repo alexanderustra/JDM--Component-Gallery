@@ -1,25 +1,37 @@
 import { useState } from "react"
 import styles from "./Inputs.module.css"
 
-interface inputPops {
+interface inputProps {
     label?: string
     placeholder?: string
+    invalid?: boolean 
+    invalidMessage?: string
     type?: "text" | "number" | 'password'
     name: string
+    onChange:  (value: string) => void;
 }
-export function PrimaryInput ({label,placeholder,type,name}:inputPops) {
+export function Input ({
+    onChange,
+    label,
+    placeholder,
+    type,
+    name,
+    invalid,
+    invalidMessage
+    }:inputProps) 
+    {
+    const [showPassword, setShowPassword] = useState(false);
     let content = null;
     if (label) {
         content = <label htmlFor={name} className={styles.label}>{label}</label>;
     }
-    const [showPassword, setShowPassword] = useState(false);
-
+    
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword); 
         console.log(showPassword)
     };
-    const inputType  = type ? type : 'text'
-    const passwordInputType = showPassword ? 'text' : "password";
+    const inputType = type === 'password' && !showPassword ? 'password' : 'text';
+    
     const svg = (
         <svg
             onClick={togglePasswordVisibility}
@@ -42,13 +54,18 @@ export function PrimaryInput ({label,placeholder,type,name}:inputPops) {
         return(
             <div className={styles.inputContainer}>
                 {content}
-                <input 
+                <input
+                    onChange={(e)=>{
+                        onChange(e.target.value)
+                    }}
                     id={name} 
-                    type={type === 'password' ? passwordInputType : inputType} 
+                    type={inputType} 
                     name={name} 
                     className={styles.primaryInput} 
                     placeholder={placeholder ? placeholder : ""}
+                    style={invalid ? {border: '1px solid #FF4040'}: {border: '1px solid #336CFF'}}
                 />
+                {invalid && <p>{invalidMessage}</p>}
                 {type === 'password' && svg }
             </div>
         )
