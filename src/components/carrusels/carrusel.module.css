@@ -1,9 +1,9 @@
 .carruselContainer {
     display: flex;
     flex-wrap: nowrap;
-    width: auto;
-    height: auto;
-    margin-top: 40px;
+    width: fit-content;
+    height: fit-content;
+    margin:20px;
     backface-visibility: hidden;
 }
 .carruselImgContainer img {
@@ -26,7 +26,7 @@
 
 .carruselImgContainer h3{
     margin-left:30%;
-    margin-bottom: -10px;
+    margin-bottom:10px;
     margin-top: 0px;
     color: #464646;
     font-family: "Roboto Mono", monospace;

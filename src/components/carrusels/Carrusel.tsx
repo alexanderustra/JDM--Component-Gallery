@@ -5,9 +5,10 @@ import styles from './carrusel.module.css';
 interface CarruselProps {
     imgs: string[];
     titles?: string[];
+    onClick?: (value:string)=> void
 }
 
-export function Carrusel({ imgs, titles }: CarruselProps) {
+export function Carrusel({ imgs, titles,onClick }: CarruselProps) {
     const [currentIdx, setCurrentIdx] = useState(0);
 
     const moveLeft = () => {
@@ -30,6 +31,9 @@ export function Carrusel({ imgs, titles }: CarruselProps) {
                     className={`${styles.carruselImgContainer} ${isMiddleImg ? styles.focusedImg : ''}`}
                     onClick={() => {
                         if (index === 0) moveLeft();
+                        else if (index === 1) {
+                            if (typeof onClick === 'function') onClick(altText);
+                        }
                         else if (index === 2) moveRight();
                     }}
                 >

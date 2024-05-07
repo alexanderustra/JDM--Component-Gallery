@@ -1,7 +1,6 @@
-/* Accordion.module.css */
-/*With Subtitles*/
 .simpleAccordionContainer {
-  width: 300px;
+  box-sizing: border-box;
+  padding: 20px;
   font-family: "Roboto", sans-serif;
   letter-spacing: .5px;
   font-weight: 300;
@@ -15,22 +14,38 @@
     box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.66);
 }
   .uiAccordionTitle {
-    border-radius: 10px;
+    border-bottom: 1px solid #FFFFFF;
     font-family: "Roboto Mono", monospace;
-    font-size: 14px;
+    font-size: 100%;
     font-weight: 500;
     font-style: normal;
     cursor: pointer;
-    padding: 10px;
+    padding: 0px;
     color: #FFFFFF;
-    transition: .1s;
   }
-  .uiAccordionTitle:hover {
-    background-color: #07294C;
+  .uiAccordionTitle * {
+    margin: 0px;
   }
-  
+  .uiAccordionTitle  h3{
+   margin-top: 20px;
+   margin-bottom: 0px;
+  }
+  .uiAccordionTitle  svg , .simpleAccordionContainer svg {
+    position: relative;
+    top: -20px;
+    margin-left: 95%;
+  }
+
+  .uiAccordionTitle p {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+  }
   .uiAccordionContent {
-  padding: 10px;
+  padding: 0px;
   display: none;
 }
   

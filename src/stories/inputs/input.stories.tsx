@@ -1,9 +1,10 @@
 import { Meta } from "@storybook/react";
 import {Input} from "../../components/inputs/Inputs"; 
 import { Textarea } from "../../components/inputs/Textarea";
+import { Select } from "../../components/inputs/Select";
 export default {
   title: "Inputs",
-  component: Input, Textarea
+  component: Input, Textarea, Select
 } as Meta;
 
 export const Inputs = () => (
@@ -44,8 +45,10 @@ export const Inputs = () => (
     invalid 
     invalidMessage="Error Message"
     />
-    <br/>
-    <Textarea 
+  </>
+);
+export const Textareas = ()=>(
+  <Textarea 
     cols={50}
     rows={7}
     label="Textarea" 
@@ -56,5 +59,15 @@ export const Inputs = () => (
       console.log(e)
     }} 
     />
-  </>
 );
+
+export const Selects = ()=> (
+  <Select  
+    label="Label"
+    placeholder="Select An Animal"
+    >
+        <option value="Kangaroo">Kangaroo</option>
+        <option value="King Cobra">King Cobra</option>
+        <option value="Ratel">Ratel </option>
+  </Select>
+)
