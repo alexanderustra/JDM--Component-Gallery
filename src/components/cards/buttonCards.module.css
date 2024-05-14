@@ -1,0 +1,49 @@
+.buttonCardContainer {
+    margin: 5px;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "Roboto Mono", monospace;
+    background-image: linear-gradient(to bottom right, #23313F, #000A13);
+    -webkit-box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.66);
+    -moz-box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.66);
+    box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.66);
+}
+.buttonCardContainer:hover {
+    background-image: linear-gradient(to bottom right, #07294C, #000A13);
+}
+
+.buttonCardContainer img {
+    width: 40%;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+    height: auto;
+}
+.content {
+    margin: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    min-height: 50%;
+}
+.content h3 {
+    margin: 0px;
+    margin-top: 20px;
+}
+.content h4 {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 80%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: "Roboto", monospace;
+}
+.buttonContainer {
+    margin-top: -5px;
+}

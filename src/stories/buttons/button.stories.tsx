@@ -7,20 +7,22 @@ export default {
 } as Meta;
 
 
-export const PrimaryButton = () => (
-  <Button text="Primary Button"  />
-);
-export const DangerButton = () => (
-  <Button text="Danger" type="danger" />
-);
-export const SuccessButton = () => (
+export const AllButtons = () => (
+  <>
+    <Button text="Primary Button"  />
+    <br />
+    <br/>
+    <Button text="Danger" type="danger" />
+    <br />
+    <br/>
     <Button text="Success" type="success" />
-);
-export const DisabledButton = () => (
+    <br />
+    <br/>
     <Button text="Disabled" type="disabled" />
+    <br />
+    <br/>
+    <Button text="Button to check if fits content"  />
+  </>
 );
-export const ContentFitButton = () => (
-  <Button text="Button to check if fits content"  />
-);
-  
+
 
