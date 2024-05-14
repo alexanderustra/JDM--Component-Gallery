@@ -33,7 +33,7 @@ export const ImgCards = ()=>(
         height="300px"
         imageUrl="https://picsum.photos/200/300" 
         title="Placeholder Image" 
-        subtitle="Si lo tiene préndalo, el radio mi hermano" 
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit." 
         />
 
         <PrimaryActionCard 
@@ -41,14 +41,14 @@ export const ImgCards = ()=>(
         height="300px"
         imageUrl="https://picsum.photos/200/300" 
         title="Placeholder Image" 
-        subtitle="Si lo tiene préndalo, el radio mi hermano" 
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit." 
         />
 
         <PrimaryActionCard 
         width="250px"
         imageUrl="https://picsum.photos/200/300" 
         title="Placeholder Image" 
-        subtitle="Si lo tiene préndalo, el radio mi hermano" 
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit." 
         />
     </div>
 )
@@ -59,7 +59,7 @@ export const ButtonCards = ()=>(
           type="horizontal"
           imageUrl="https://picsum.photos/200/300" 
           title="Placeholder Image" 
-          subtitle="Si lo tiene préndalo, el radio mi hermano" 
+          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit." 
           primaryBtnText="Buy"
           secondaryBtnText="Add to Cart"
           primaryBtnAction={()=>{
@@ -75,7 +75,7 @@ export const ButtonCards = ()=>(
           type="horizontal"
           imageUrl="https://picsum.photos/200/300" 
           title="Placeholder Image" 
-          subtitle="Si lo tiene préndalo, el radio mi hermano, fjsajsdnajkf jsdafjks fad khsb nfjsdkfsjk fsak kfsab ks dahk fsahk jh fksabfsabk" 
+          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae" 
           primaryBtnText="Buy"
           secondaryBtnText="Add to Cart"
           primaryBtnAction={()=>{
@@ -91,7 +91,7 @@ export const ButtonCards = ()=>(
         style={{width:'200px',height:'320px'}}
         imageUrl="https://picsum.photos/200/300" 
         title="Placeholder Image" 
-        subtitle="Si lo tiene préndalo, el radio mi hermano" 
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit." 
         primaryBtnText="Buy"
         primaryBtnAction={()=>{
           console.log('hola')
@@ -100,10 +100,10 @@ export const ButtonCards = ()=>(
 
         <ButtonCard  
           type="vertical"
-          style={{width:'200px',height:'400px'}}
+          style={{width:'200px',height:'430px'}}
           imageUrl="https://picsum.photos/200/300" 
           title="Placeholder Image" 
-          subtitle="Si lo tiene préndalo, el radio mi hermano ; escribir es como un vicio, ya lo dijo mi hermano, yo le rindo honor al vicio desde que es muy temprano" 
+          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae" 
           primaryBtnText="Buy"
         secondaryBtnText="Add to Cart"
         primaryBtnAction={()=>{
@@ -115,11 +115,11 @@ export const ButtonCards = ()=>(
         />
 
         <ButtonCard  
-         style={{width:'200px',height:'400px'}}
+         style={{width:'200px',height:'430px'}}
           type="vertical"
           imageUrl="https://picsum.photos/200/300" 
           title="Placeholder Image" 
-          subtitle="Si lo tiene préndalo, el radio mi hermano ; escribir es como un vicio, ya lo dijo mi hermano, yo le rindo honor al vicio desde que es muy temprano" 
+          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae" 
           primaryBtnText="Buy"
         secondaryBtnText="Add to Cart"
         primaryBtnAction={()=>{

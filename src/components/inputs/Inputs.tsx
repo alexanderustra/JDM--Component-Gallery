@@ -1,7 +1,8 @@
-import { useState } from "react"
+import { CSSProperties, useState } from "react"
 import styles from "./Inputs.module.css"
 
 interface inputProps {
+    style?: CSSProperties
     label?: string
     placeholder?: string
     invalid?: boolean 
@@ -11,6 +12,7 @@ interface inputProps {
     onChange:  (value: string) => void;
 }
 export function Input ({
+    style,
     onChange,
     label,
     placeholder,
@@ -52,7 +54,7 @@ export function Input ({
     );
 
         return(
-            <div className={styles.inputContainer}>
+            <div className={styles.inputContainer}  style={style}>
                 {content}
                 <input
                     onChange={(e)=>{
