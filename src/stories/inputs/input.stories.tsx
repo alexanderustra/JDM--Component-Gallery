@@ -2,11 +2,35 @@ import { Meta } from "@storybook/react";
 import {Input} from "../../components/inputs/Inputs"; 
 import { Textarea } from "../../components/inputs/Textarea";
 import { Select } from "../../components/inputs/Select";
+import { SearchBar } from "../../components/searchBars/SearchBar";
 export default {
   title: "Inputs",
-  component: Input, Textarea, Select
+  component: Input, Textarea, Select , SearchBar
 } as Meta;
 
+const searchData = [
+  'long long text longer than last time',
+"apple",
+"banana",
+"chair",
+"dog",
+"elephant",
+"flower",
+"guitar",
+"hat",
+"igloo",
+"jacket",
+"kangaroo",
+"lamp",
+"monkey",
+"notebook",
+"orange",
+"penguin",
+"queen",
+"rabbit",
+"socks",
+"table"
+]
 export const Inputs = () => (
   <>
     <Input 
@@ -70,4 +94,24 @@ export const Selects = ()=> (
         <option value="King Cobra">King Cobra</option>
         <option value="Ratel">Ratel </option>
   </Select>
+)
+
+export const SearchBars = ()=>(
+  <>
+    <SearchBar 
+      placeholder="Search"
+      onClick={(value)=>{
+      console.log(value)
+    }} 
+    color="#464646"
+    />
+    <SearchBar 
+      placeholder="Search"
+      onSelect={(value)=>{
+        console.log(value)
+      }} 
+      color="#464646"
+      data={searchData}
+      />
+  </>
 )
