@@ -7,6 +7,7 @@ export default {
 
 export const Navbar = ()=>(
     <NavBar 
+    textColor="#464646"
     logo="src\assets\logo.png"
     searchBar
     searchBarFunction={(value)=>{

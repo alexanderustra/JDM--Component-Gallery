@@ -1,6 +1,7 @@
 import styles from './navbar.module.css'
 import { SearchBar } from '../searchBars/SearchBar'
 interface NavBarProps {
+    textColor?:string
     logo?:string
     width?:string
     logoAlt?:string
@@ -8,9 +9,10 @@ interface NavBarProps {
     searchBar?: Boolean
     searchBarFunction?: (value:string)=> void
 }
-export function NavBar ({logo,logoAlt,children,width,searchBar,searchBarFunction}:NavBarProps) {
+export function NavBar ({logo,logoAlt,children,width,searchBar,searchBarFunction,textColor}:NavBarProps) {
     const navbarStyle = {
-        width: width
+        width: width,
+        color:textColor
     }
     const userFunction = (value:string)=>{
         if(searchBarFunction) {
@@ -23,7 +25,7 @@ export function NavBar ({logo,logoAlt,children,width,searchBar,searchBarFunction
             <div className={styles.content}>
                 {children}
             </div>
-            {searchBar && <SearchBar onClick={userFunction} />}
+            {searchBar && <SearchBar onClick={userFunction} width='100%' />}
         </div>
     )
 }

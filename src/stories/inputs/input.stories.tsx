@@ -99,13 +99,7 @@ export const Selects = ()=> (
 export const SearchBars = ()=>(
   <>
     <SearchBar 
-      placeholder="Search"
-      onClick={(value)=>{
-      console.log(value)
-    }} 
-    color="#464646"
-    />
-    <SearchBar 
+      width="100%"
       placeholder="Search"
       onSelect={(value)=>{
         console.log(value)
@@ -113,5 +107,13 @@ export const SearchBars = ()=>(
       color="#464646"
       data={searchData}
       />
+    <SearchBar 
+      width="100%"
+      placeholder="Search"
+      onClick={(value)=>{
+      console.log(value)
+    }} 
+    color="#464646"
+    />
   </>
 )

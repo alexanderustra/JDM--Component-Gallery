@@ -73,7 +73,7 @@ export function SearchBar({ data, onSelect ,onClick , color,style,placeholder,wi
     }
 
     return (
-        <div className={styles.container}>
+        <div className={onSelect ? styles.forSelect : styles.container} style={{width:width}}>
             <input
                 onFocus={()=>{
                     setShowResultsContainer(true)
