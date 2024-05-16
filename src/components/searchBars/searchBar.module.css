@@ -41,6 +41,7 @@
 .resultsContainer {
     z-index: 99999999;
     overflow-y: auto;
+    overflow-x: hidden;
     width: 102%;
     height: auto;
     max-height: 240px;
@@ -74,7 +75,7 @@
     cursor: pointer;
 }
 .resultsContainer h4:hover {
-    transform: scale(1.01);
+    transform: scale(1.025);
     text-decoration: underline;
     background: linear-gradient(to bottom right, #0681FB, #0681FB);
     background-clip: border-box;

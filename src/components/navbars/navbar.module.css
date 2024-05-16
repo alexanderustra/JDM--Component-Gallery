@@ -1,4 +1,5 @@
 .navBar {
+    margin-top: 0px;
     box-sizing: border-box;
     padding: 10px;
     height: 60px;
@@ -42,9 +43,15 @@
 .navBar img:hover {
     transform: scale(1.1);
 }
-.navBar * {
-    margin: auto;
-}
+
 .navBar span {
     margin: 12px;
+}
+
+.searchbarContainer {
+    height: fit-content;
+    margin-top: -10px;
+}
+.searchbarContainer * {
+    margin: 0px;
 }

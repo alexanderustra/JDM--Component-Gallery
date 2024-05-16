@@ -25,7 +25,9 @@ export function NavBar ({logo,logoAlt,children,width,searchBar,searchBarFunction
             <div className={styles.content}>
                 {children}
             </div>
-            {searchBar && <SearchBar onClick={userFunction} width='100%' />}
+            <div className={styles.searchbarContainer}>
+                {searchBar && <SearchBar onClick={userFunction} width='100%' color='#464646'/>}
+            </div>
         </div>
     )
 }

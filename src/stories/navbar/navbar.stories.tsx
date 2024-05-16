@@ -13,8 +13,8 @@ export const Navbar = ()=>(
     searchBarFunction={(value)=>{
         console.log(value)
     }}>
-        <h2>Hola</h2>
-        <h2>Hola</h2>
-        <h2>Hola</h2>
+        <h2>Item 1</h2>
+        <h2>Item 2</h2>
+        <h2>Item 3</h2>
     </NavBar>
 )

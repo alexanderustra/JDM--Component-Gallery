@@ -1,16 +1,18 @@
 import styles from './listBox.module.css'
-import { ReactNode } from 'react';
-import React from 'react'
+import { CSSProperties, ReactNode } from 'react';
 interface ListBoxProps {
     children: ReactNode;
+    width?:string
+    style?: CSSProperties
 }
-export function ListBox ({children}:ListBoxProps) {
-    const heightCalculator = children ? React.Children.count(children) * 60 : 'auto';
-    const listBoxStyle = {
-        height: heightCalculator
-    };
+export function ListBox ({children,width,style}:ListBoxProps) {
+    
+    const listBox = {
+        width:width,
+        ...style
+    }
     return (
-        <div className={styles.listContainer} style={listBoxStyle}>
+        <div className={styles.listContainer}  style={listBox}>
             {children}
         </div>
     )
