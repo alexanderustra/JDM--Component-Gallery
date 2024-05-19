@@ -110,3 +110,62 @@ input[type="password"]::placeholder {
     background-color: #336CFF;
 }
 
+/*FILE UPLOADER*/
+.fileUploaderContainer {
+    margin: 10px;
+    width: fit-content;
+}
+.input {
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    padding: 5px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #464646;
+    border: 1px solid #336CFF;
+    background-color: transparent;
+}
+.input p {
+    margin: 0px;
+    margin-top: 10px;
+    margin-right: 5px;
+    overflow: hidden;
+    width: 150px;
+}
+.filesBtn {
+    margin-top: -1px;
+    margin-left: 0px;
+}
+.hiddenFileInput {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    left:30px;
+    width: 270px;
+    height: 40px;
+}
+.dragnDrop {
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 80px;
+    margin-top: 10px;
+    width: 270px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px dashed #336CFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #464646;
+    transition: .2s;
+}
+.dragOver {
+    transition: .2s;
+    transform: scale(1.05);
+    border: 2px solid #336CFF;
+}

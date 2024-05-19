@@ -3,9 +3,10 @@ import {Input} from "../../components/inputs/Inputs";
 import { Textarea } from "../../components/inputs/Textarea";
 import { Select } from "../../components/inputs/Select";
 import { SearchBar } from "../../components/searchBars/SearchBar";
+import { FileUploader } from "../../components/inputs/FileUploader";
 export default {
   title: "Inputs",
-  component: Input, Textarea, Select , SearchBar
+  component: Input, Textarea, Select , SearchBar, FileUploader
 } as Meta;
 
 const searchData = [
@@ -71,6 +72,11 @@ export const Inputs = () => (
     />
   </>
 );
+export const TypeFile = ()=>(
+  <FileUploader onNewFile={(files)=>{
+    console.log(files)
+  }}/>
+)
 export const Textareas = ()=>(
   <Textarea 
     cols={50}
