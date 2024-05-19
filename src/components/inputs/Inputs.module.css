@@ -111,6 +111,49 @@ input[type="password"]::placeholder {
 }
 
 /*FILE UPLOADER*/
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.fileListContainer {
+    margin-top: 30px;
+    width: 250px;
+    height: fit-content;
+}
+.fileList {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    height: fit-content;
+    width: 100%;
+    border: 1px solid #336CFF;
+}
+.fileList  * {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.fileList  p {
+    padding-top: 10px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    width: 190px;
+    height: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #464646;
+}
+.removeBtn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.openListBtn {
+    margin-top: 35px;
+}
 .fileUploaderContainer {
     margin: 10px;
     width: fit-content;

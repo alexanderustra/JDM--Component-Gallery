@@ -3,18 +3,21 @@ import React, { useRef,useState } from 'react';
 import styles from './Inputs.module.css'
 
 interface inputFileProps {
-    onNewFile: (files: FileList) => void;
+    onNewFile: (files: File[]) => void;
 }
 
 export function FileUploader ({ onNewFile}:inputFileProps) {
-    const [selectedFiles, setSelectedFiles] = useState<FileList | null>(null);
+    const [openList,setOpenList] = useState(false)
+    const [filesList, setFilesList] = useState<File[]>([]);
     const fileInputRef = useRef<HTMLInputElement>(null);
 
     const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const files = event.target.files;
         if (files) {
-            onNewFile(files);
-            setSelectedFiles(files)
+            const newFilesArray = Array.from(files);
+            const updatedFilesList = [...filesList, ...newFilesArray];
+            setFilesList(updatedFilesList);
+            onNewFile(updatedFilesList);
         }
     };
     const handleDragOver = (event: React.DragEvent<HTMLDivElement>) => {
@@ -30,15 +33,23 @@ export function FileUploader ({ onNewFile}:inputFileProps) {
     const handleDrop = (event: React.DragEvent<HTMLDivElement>) => {
         event.preventDefault();
         event.currentTarget.classList.remove(styles.dragOver);
-        const files = event.dataTransfer.files;
-        setSelectedFiles(files)
-        onNewFile(files);
+        const files = event.dataTransfer.files
+        const newFilesArray = Array.from(files)
+        const updatedFilesList = [...filesList, ...newFilesArray];
+        setFilesList(updatedFilesList);
+        onNewFile(updatedFilesList);
+    };
+    const handleRemoveFile = (fileName: string) => {
+        const updatedFilesList = filesList.filter(file => file.name !== fileName);
+        setFilesList(updatedFilesList);
+        onNewFile(updatedFilesList);
     };
     return (
-        <div className={styles.fileUploaderContainer} >
+        <div className={styles.container}>
+            <div className={styles.fileUploaderContainer} >
             <p className={styles.label} >label</p>
             <div className={styles.input}>
-                <p >{selectedFiles ? selectedFiles[selectedFiles.length - 1].name : 'Add Files'}</p>
+                <p >Add Files</p>
                 <Button text='Select Files' className={styles.filesBtn} />
                 <input
                     type="file"
@@ -53,6 +64,18 @@ export function FileUploader ({ onNewFile}:inputFileProps) {
             onDragLeave={handleDragLeave}
             onDrop={handleDrop}
             > Drag And Drop</div>
+        </div>
+        <Button className={styles.openListBtn} text={`${filesList.length}`} action={()=> setOpenList(!openList)} />
+        { openList && 
+           <div className={styles.fileListContainer}>
+            {filesList.map((file) => (
+                <div key={file.name} className={styles.fileList}>
+                    <p>{file.name}</p>
+                    <Button text='Delete' action={() => handleRemoveFile(file.name)} className={styles.removeBtn} />
+                </div>
+            ))}
+           </div>
+            }
         </div>
     )
 }
