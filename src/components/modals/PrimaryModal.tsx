@@ -45,8 +45,8 @@ export function PrimaryModal ({children, title, onAgree , onDeny , type, active 
             {type !== 'short' && children}
             <hr />
             <div className= {styles.buttonContainer}>
-                <Button action={handleDeny} text={denyBtn || 'Deny'} type='danger'  style={buttonLeftStyles} />
-                <Button action={handleAgree} text={agreeBtn || 'Agree'} type='success'  style={buttonRightStyles} />
+                <Button onClick={handleDeny}  type='danger'  style={buttonLeftStyles}>{denyBtn || 'Deny'}</Button>
+                <Button onClick={handleAgree} type='success'  style={buttonRightStyles} >{agreeBtn || 'Agree'}</Button>
             </div>
          </div>
         </div>

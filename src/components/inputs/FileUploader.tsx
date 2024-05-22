@@ -50,7 +50,7 @@ export function FileUploader ({ onNewFile}:inputFileProps) {
             <p className={styles.label} >label</p>
             <div className={styles.input}>
                 <p >Add Files</p>
-                <Button text='Select Files' className={styles.filesBtn} />
+                <Button className={styles.filesBtn}>Select Files</Button>
                 <input
                     type="file"
                     ref={fileInputRef}
@@ -65,13 +65,13 @@ export function FileUploader ({ onNewFile}:inputFileProps) {
             onDrop={handleDrop}
             > Drag And Drop</div>
         </div>
-        <Button className={styles.openListBtn} text={`${filesList.length}`} action={()=> setOpenList(!openList)} />
+        <Button className={styles.openListBtn} onClick={()=> setOpenList(!openList)}>{filesList.length}</Button>
         { openList && 
            <div className={styles.fileListContainer}>
             {filesList.map((file) => (
                 <div key={file.name} className={styles.fileList}>
                     <p>{file.name}</p>
-                    <Button text='Delete' action={() => handleRemoveFile(file.name)} className={styles.removeBtn} />
+                    <Button onClick={() => handleRemoveFile(file.name)} className={styles.removeBtn}>Delete</Button>
                 </div>
             ))}
            </div>

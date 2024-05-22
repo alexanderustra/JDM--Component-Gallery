@@ -1,4 +1,5 @@
-.simpleAccordionContainer {
+.AccordionContainer {
+  width: auto;
   box-sizing: border-box;
   padding: 20px;
   font-family: "Roboto", sans-serif;
@@ -13,7 +14,7 @@
     -moz-box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.66);
     box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.66);
 }
-  .uiAccordionTitle {
+  .AccordionTitle {
     border-bottom: 1px solid #FFFFFF;
     font-family: "Roboto Mono", monospace;
     font-size: 100%;
@@ -23,20 +24,20 @@
     padding: 0px;
     color: #FFFFFF;
   }
-  .uiAccordionTitle * {
+  .AccordionTitle * {
     margin: 0px;
   }
-  .uiAccordionTitle  h3{
+  .AccordionTitle  h3{
    margin-top: 20px;
    margin-bottom: 0px;
   }
-  .uiAccordionTitle  svg , .simpleAccordionContainer svg {
+  .AccordionTitle  svg , .simpleAccordionContainer svg {
     position: relative;
     top: -20px;
     margin-left: 95%;
   }
 
-  .uiAccordionTitle p {
+  .AccordionTitle p {
     margin: 0px;
     margin-bottom: 10px;
     font-family: "Roboto", sans-serif;
@@ -44,12 +45,12 @@
     font-style: normal;
     font-size: 15px;
   }
-  .uiAccordionContent {
+  .AccordionContent {
   padding: 0px;
   display: none;
 }
   
-.uiAccordionContent.active {
+.AccordionContent.active {
     display: block;
     background-color: #23313F; 
   }

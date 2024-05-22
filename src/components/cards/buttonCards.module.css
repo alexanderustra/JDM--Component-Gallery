@@ -1,4 +1,5 @@
 .buttonCardContainer {
+    overflow: auto;
     margin: 5px;
     display: flex;
     width: fit-content;
@@ -6,7 +7,6 @@
     border-radius: 10px;
     color: #FFFFFF;
     box-sizing: border-box;
-    font-size: 100%;
     font-weight: 300;
     font-style: normal;
     font-family: "Roboto Mono", monospace;
@@ -33,6 +33,7 @@
     min-height: 50%;
 }
 .content h3 {
+    font-size: 110%;
     margin: 0px;
     margin-top: 20px;
 }

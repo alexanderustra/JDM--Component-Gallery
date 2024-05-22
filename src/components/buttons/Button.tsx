@@ -1,20 +1,21 @@
+import { ReactNode} from "react";
 import styles from "./Buttons.module.css"
 
 interface ButtonProps {
-    text:string
+    children: ReactNode;
     type?: "success" | "danger" | "disabled"
-    action?: () => void;
+    onClick?: () => void;
     className?: string 
     style?: React.CSSProperties;
 }
 
-export function Button ({text,type,action,className , style}:ButtonProps) {
+export function Button ({children,type,onClick,className , style}:ButtonProps) {
     const buttonClasses = type ? styles[type] : styles.primaryButton;
     const combinedClasses = className ? `${buttonClasses} ${className}` : buttonClasses;
 
  return (
-    <button onClick = {action} className={combinedClasses} style={style} >
-        {text}
+    <button onClick = {onClick} className={combinedClasses} style={style} >
+        {children}
     </button>
  )   
 }

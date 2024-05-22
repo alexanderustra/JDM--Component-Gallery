@@ -47,8 +47,8 @@ export function ButtonCard ({
                 <h3>{title}</h3>
                 <h4>{subtitle}</h4>
                 <div className={styles.buttonContainer}>
-                    {secondaryBtnText && <Button text={secondaryBtnText} action={secondaryBtnAction} style={{margin:'5px'}}/>}
-                    <Button text={primaryBtnText} action={primaryBtnAction}  style={{marginTop:'20px'}}/>
+                    {secondaryBtnText && <Button onClick={secondaryBtnAction} style={{margin:'5px'}}>{secondaryBtnText} </Button>}
+                    <Button  onClick={primaryBtnAction}  style={{marginTop:'20px'}}>{primaryBtnText}</Button>
                 </div>
             </div>
         </div>

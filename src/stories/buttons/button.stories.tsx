@@ -9,19 +9,19 @@ export default {
 
 export const AllButtons = () => (
   <>
-    <Button text="Primary Button"  />
+    <Button>Primary Button</Button>
     <br />
     <br/>
-    <Button text="Danger" type="danger" />
+    <Button type="danger">Danger</Button>
     <br />
     <br/>
-    <Button text="Success" type="success" />
+    <Button  type="success">Success</Button>
     <br />
     <br/>
-    <Button text="Disabled" type="disabled" />
+    <Button  type="disabled">Disabled</Button>
     <br />
     <br/>
-    <Button text="Button to check if fits content"  />
+    <Button>Button to check if fits content</Button>
   </>
 );
 

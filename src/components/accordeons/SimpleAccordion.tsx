@@ -29,7 +29,7 @@ export const SimpleAccordion: React.FC<AccordionProps> = ({ items,type }: Accord
   const [activeIndex, setActiveIndex] = useState<number>(-1);
 
   const accordeonStyle = {
-    width: type === 'short' ? '300px' : type === 'long' ? '900px' : '500px'
+    maxWidth: type === 'short' ? '300px' : type === 'long' ? '900px' : '500px'
   }
 
   const onTitleClick = (index: number) => {
@@ -42,7 +42,7 @@ export const SimpleAccordion: React.FC<AccordionProps> = ({ items,type }: Accord
     return (
       <React.Fragment key={item.title} >
         <div 
-          className={styles.uiAccordionTitle + isActive} 
+          className={styles.AccordionTitle + isActive} 
           onClick={() => onTitleClick(index)}
           >
           <h3 style={{fontFamily:'"Roboto Mono", monospace'}}>
@@ -51,7 +51,7 @@ export const SimpleAccordion: React.FC<AccordionProps> = ({ items,type }: Accord
           {item.subtitle && <p style={{fontFamily:'"Roboto", monospace',fontSize:'18.5px'}}>{item.subtitle}</p>}
         </div>
         <div 
-        className={styles.uiAccordionContent + isActive}
+        className={styles.AccordionContent + isActive}
         style={{borderBottom:'1px solid #FFFFFF'}}
         >
           <p>{item.content}</p>
@@ -60,5 +60,5 @@ export const SimpleAccordion: React.FC<AccordionProps> = ({ items,type }: Accord
     );
   });
 
-  return <div className={styles.simpleAccordionContainer} style = {accordeonStyle}>{renderedItems}</div>;
+  return <div className={styles.AccordionContainer} style = {accordeonStyle}>{renderedItems}</div>;
 };
